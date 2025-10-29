@@ -1,0 +1,54 @@
+// Stavros Stathoudakis
+simulator lang=spice
+
+.INCLUDE "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ihp013ng_include_all_slow.scs"
+.INCLUDE "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+
+.TEMP 0.0
+.PARAM VVDVAL=0.96
+VVDD VDD 0 'VVDVAL'
+VGND VSS 0 0.000000
+Vin  in1  0  PULSE(0 0.96 5p 150p 150p 1n 2n)
+
+// Chain
+inv1 in1 out vdd vss INVJIX0
+inv2 out out2 vdd vss INVJIX0
+inv3 out2 out3 vdd vss INVJIX0
+inv4 out3 out4 vdd vss INVJIX0
+inv5 out4 out5 vdd vss INVJIX0
+inv6 out5 out6 vdd vss INVJIX0
+inv7 out6 out7 vdd vss INVJIX0
+inv8 out7 out8 vdd vss INVJIX0
+inv9 out8 out9 vdd vss INVJIX0
+inv10 out9 out10 vdd vss INVJIX0
+
+// FO4
+.subckt FO4 out vdd vss
+inv11 out out11 vdd vss INVJIX0
+inv12 out out12 vdd vss INVJIX0
+inv13 out out13 vdd vss INVJIX0
+.ends FO4
+
+inv1_fanout4 out vdd vss FO4
+inv2_fanout4 out2 vdd vss FO4
+inv3_fanout4 out3 vdd vss FO4
+inv4_fanout4 out4 vdd vss FO4
+inv5_fanout4 out5 vdd vss FO4
+inv6_fanout4 out6 vdd vss FO4
+inv7_fanout4 out7 vdd vss FO4
+inv8_fanout4 out8 vdd vss FO4
+inv9_fanout4 out9 vdd vss FO4
+inv10_fanout4 out10 vdd vss FO4
+
+.TRAN 1e-13 1e-08
+
+// Measurement of delay
+.meas tran delay_out6 when V(out6)='VVDVAL/2' rise=1
+.meas tran delay_out8 when V(out8)='VVDVAL/2' rise=1
+.meas tran delay_out8_ou6 param='(delay_out8 - delay_out6)'
+
+.ALTER
+.TEMP 50.0 
+
+.ALTER
+.TEMP 125.0

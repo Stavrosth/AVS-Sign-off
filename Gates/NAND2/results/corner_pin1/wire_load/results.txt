@@ -1,0 +1,16 @@
+--- Fitted Base Model Parameters ---
+D0    =   42.041, kDP = 0.0933013, kDT = 0.00198005
+Vt    =  0.60669, kVtP= 0.121403, kVtT= -0.00108542
+alpha = 0.943216, kAlphaP=-0.0707294, kAlphaT=0.00100597
+
+--- Model Performance (On Training Data) ---
+R-squared (R2 Score): 0.999679
+RRMSE:                  0.006392
+
+--- Model Performance (On UNSEEN Test Data) ---
+R-squared (R2 Score): 0.998572
+RRMSE:                  0.007769
+
+--- Voltage Shift Analysis ---
+Anchor Delay (ss, 0C): 95.606752 ps
+Voltage Shift (V_anchor[ss,0C] - V_match[ff,0C]): 0.269302 V

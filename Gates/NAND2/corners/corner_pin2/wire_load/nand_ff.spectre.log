@@ -1,0 +1,2073 @@
+
+Spectre (R) Circuit Simulator
+Version 23.1.0.242.isr1 64bit -- 7 Sep 2023
+Copyright (C) 1989-2023 Cadence Design Systems, Inc. All rights reserved
+        worldwide. Cadence and Spectre are registered trademarks of Cadence
+        Design Systems, Inc. All others are the property of their respective
+        holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
+        Security, Inc.
+
+User: sstatthoudakis   Host: torreyridge   HostID: 7F0100   PID: 18881
+Memory  available: 91.0353 GB  physical: 135.0278 GB
+Linux   : CentOS Linux release 7 (Core)
+CPU Type: Intel(R) Xeon(R) Silver 4114 CPU @ 2.20GHz
+All processors running at 2194.8 MHz
+        Socket: Processors
+        0:       0
+        2:       1
+        4:       2
+        6:       3
+        8:       4
+        10:      5
+        12:      6
+        14:      7
+        16:      8
+        18:      9
+        20:     10
+        22:     11
+        
+System load averages (1min, 5min, 15min) : 62.6 %, 60.2 %, 49.6 %
+This is a virtual machine
+
+
+Simulating `nand_ff.scs' on torreyridge at 3:50:09 PM, Wed Oct 29, 2025
+        (process id: 18881).
+Current working directory:
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load
+Command line:
+     \
+        /CASNFSHOME/home/edatools/cadence/2023-24/RHELx86/SPECTRE_23.10.242/tools.lnx86/bin/spectre
+        \
+        -64 nand_ff.scs
+Licensing Information:
+[15:50:09.231841] Configured Lic search path (22.01-s002): 5280@10.64.82.10
+
+Licensing Information:
+[15:50:10.001464] Periodic Lic check successful
+
+Reading file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.scs
+Reading file: 
+        /CASNFSHOME/home/edatools/cadence/2023-24/RHELx86/SPECTRE_23.10.242/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ihp013ng_include_all_fast.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_HBT/VBIC/spectre/SG13_cornerBIP.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_HBT/VBIC/spectre/SG13_hbt_mm.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_HBT/VBIC/spectre/SG13_hbt.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_HBT/VBIC/spectre/SG13_hbt_stat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/cornerMOSlv_psp.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moslv_psp_stat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moslv_psp_mod.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moslv_psp_parm.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/cornerMOShv_psp.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moshv_psp_stat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moshv_psp_mod.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moshv_psp_parm.scs
+
+Warning from spectre in `nmoselt', during circuit read-in.
+    WARNING (SFE-2296):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_moshv_psp_mod.lib"
+        79: The inline subckt definition `nmoselt' does not contain any inline
+        components. The `inline' qualifier will therefore be ignored.
+
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/sg13_svaricaphv_mosvar_mod.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cornerRES.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_res_mm.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_res_stat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_res.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cornerCAP.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cap_mm.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cap_stat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cap.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/Ind_unit_4PI
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/Parameters_define_4PI
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/sg13s_dschottky_nbl1_mod.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_diodes.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/CheckMOSstat.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_MOS/library/spectre/CheckMOSdyn.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_ESD/spectre/SG13_esd.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_cornerTSV.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_paramsTSV.scs
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/SG13S_618_rev1.12.15/tech/SG13_PASSIVES/spectre/SG13_tsv.lib
+Reading file: 
+        /CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs
+Time for NDB Parsing: CPU = 548.874 ms, elapsed = 695.369 ms.
+Time accumulated: CPU = 651.385 ms, elapsed = 695.373 ms.
+Peak resident memory used = 131 Mbytes.
+
+
+Warning from spectre in `NA2JIX0':`ncell1', during hierarchy flattening.
+    WARNING (SFE-103):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+        26304: Subcircuit parameter `nrd', defined for subcircuit
+        `sg13_lv_pmos', has been ignored because it is invalid. Check the
+        parameters that are defined for the instantiated subcircuit and rerun
+        the simulation.
+    WARNING (SFE-103):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+        26304: Subcircuit parameter `nrs', defined for subcircuit
+        `sg13_lv_pmos', has been ignored because it is invalid. Check the
+        parameters that are defined for the instantiated subcircuit and rerun
+        the simulation.
+    WARNING (SFE-103):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+        26307: Subcircuit parameter `nrd', defined for subcircuit
+        `sg13_lv_pmos', has been ignored because it is invalid. Check the
+        parameters that are defined for the instantiated subcircuit and rerun
+        the simulation.
+    WARNING (SFE-103):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+        26307: Subcircuit parameter `nrs', defined for subcircuit
+        `sg13_lv_pmos', has been ignored because it is invalid. Check the
+        parameters that are defined for the instantiated subcircuit and rerun
+        the simulation.
+    WARNING (SFE-103):
+        "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+        26310: Subcircuit parameter `nrd', defined for subcircuit
+        `sg13_lv_nmos', has been ignored because it is invalid. Check the
+        parameters that are defined for the instantiated subcircuit and rerun
+        the simulation.
+        Further occurrences of this warning will be suppressed.
+
+Time for Elaboration: CPU = 30.256 ms, elapsed = 36.1729 ms.
+Time accumulated: CPU = 681.907 ms, elapsed = 734.709 ms.
+Peak resident memory used = 139 Mbytes.
+
+
+Time for EDB Visiting: CPU = 12.597 ms, elapsed = 14.2109 ms.
+Time accumulated: CPU = 694.737 ms, elapsed = 751.727 ms.
+Peak resident memory used = 143 Mbytes.
+
+
+Warning from spectre during initial setup.
+    WARNING (SPECTRE-17237): Assert violations will be written to the sqldb
+        file because the 'checklimitdest' option has not been specified.
+    WARNING (SPECTRE-17607): Assert `check_sg13s_lv_nmosHV_vgs' is ignored
+        because it contains an expression which is not supported by native
+        evaluator. 
+    WARNING (SPECTRE-17607): Assert `check_sg13s_lv_nmosHV_vgd' is ignored
+        because it contains an expression which is not supported by native
+        evaluator. 
+    WARNING (SPECTRE-17607): Assert `check_sg13s_lv_nmosHV_vds' is ignored
+        because it contains an expression which is not supported by native
+        evaluator. 
+    WARNING (SPECTRE-17607): Assert `check_sg13s_lv_nmosHV_vdb' is ignored
+        because it contains an expression which is not supported by native
+        evaluator. 
+    WARNING (SPECTRE-17607): Assert `check_sg13s_lv_nmosHV_vgb' is ignored
+        because it contains an expression which is not supported by native
+        evaluator. 
+        Further occurrences of this warning will be suppressed.
+Notice from spectre during topology check.
+    Only one connection to the following 11 nodes:
+        X_in1_wire.Capacitance*M
+        X_out_wire.Capacitance*M
+        X_out2_wire.Capacitance*M
+        X_out3_wire.Capacitance*M
+        X_out4_wire.Capacitance*M
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+    No DC path from node `X_in1_wire.Capacitance*M' to ground, Gmin installed
+        to provide path.
+    No DC path from node `X_out_wire.Capacitance*M' to ground, Gmin installed
+        to provide path.
+    No DC path from node `X_out2_wire.Capacitance*M' to ground, Gmin installed
+        to provide path.
+    No DC path from node `X_out3_wire.Capacitance*M' to ground, Gmin installed
+        to provide path.
+    No DC path from node `X_out4_wire.Capacitance*M' to ground, Gmin installed
+        to provide path.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+
+Global user options:
+               temp = 0
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 195
+          capacitor 201   
+          pspnqs103 40    
+           resistor 161   
+            vsource 3     
+
+Analysis and control statement inventory:
+         altergroup 14    
+               tran 15    
+
+Output statements:
+             .probe 0     
+           .measure 3     
+               save 0     
+
+Design checks inventory:
+          paramtest 160   
+             assert 40    
+
+
+Notice from spectre.
+    7 notices suppressed.
+    82 warnings suppressed.
+
+Time for parsing: CPU = 13.458 ms, elapsed = 561.803 ms.
+Time accumulated: CPU = 708.421 ms, elapsed = 1.31676 s.
+Peak resident memory used = 146 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+Notice from spectre during transient analysis `transient1'.
+    No checklimit analysis defined for asserts. A default checklimit analysis
+        'SpectreChecklimitAnal' has been created with all asserts enabled.
+
+
+*****************************************************
+Transient Analysis `transient1': time = (0 s -> 2 ns)
+*****************************************************
+
+Notice from spectre during IC analysis `timeSweep', during transient analysis
+        `transient1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(ncell9.net15) = -3.09836 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 6.356 ms, elapsed = 8.28195 ms.
+
+Notice from spectre during transient analysis `transient1'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient1.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 0 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7......6...
+
+Notice from spectre at time = 921.885 ps during transient analysis
+        `transient1'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6....
+
+Notice from spectre at time = 961.885 ps during transient analysis
+        `transient1'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......
+
+Notice from spectre at time = 1.00189 ns during transient analysis
+        `transient1'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5
+
+Notice from spectre at time = 1.04189 ns during transient analysis
+        `transient1'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5.
+
+Notice from spectre at time = 1.08189 ns during transient analysis
+        `transient1'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             265
+
+Notice from spectre during transient analysis `transient1'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.065 V
+I: I(VVDD:p) = 65.56 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (18.1 %)      2 (41.1 %)      3 (37.6 %)
+         4 (100.0 %)     5 (10.7 %)      6 (2.2 %)       7 (100.0 %)
+         8 (2.7 %)       9 (100.0 %)    10 (3.1 %)      11 (100.0 %)
+        Total: 615.5%
+Initial condition solution time: CPU = 6.446 ms, elapsed = 8.83985 ms.
+Intrinsic tran analysis time:    CPU = 204.331 ms, elapsed = 870.302 ms.
+Opening measure  file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.measure
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt0
+Total time required for tran analysis `transient1': CPU = 282.905 ms, elapsed =
+        1.16633 s, util. = 24.3%.
+Time accumulated: CPU = 1.0053 s, elapsed = 2.5288 s.
+Peak resident memory used = 156 Mbytes.
+
+
+Notice from spectre.
+    7 notices suppressed.
+
+
+*************************
+Alter Group `altergroup1'
+*************************
+Time for altergroup1: CPU = 6.879 ms, elapsed = 7.64108 ms.
+Time accumulated: CPU = 1.01231 s, elapsed = 2.53735 s.
+Peak resident memory used = 156 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient2': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.629 ms, elapsed = 5.63121 ms.
+
+Notice from spectre during transient analysis `transient2'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient2.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 50 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7......6......5..
+
+Notice from spectre at time = 1.08368 ns during transient analysis
+        `transient2'.
+    Found trapezoidal ringing on node ncell10.1:B.
+
+......9......8......7......6......5...
+
+Notice from spectre at time = 1.12368 ns during transient analysis
+        `transient2'.
+    Found trapezoidal ringing on node ncell10.1:B.
+
+......9......8......7......6......5....
+
+Notice from spectre at time = 1.155 ns during transient analysis `transient2'.
+    Found trapezoidal ringing on node ncell10.1:B.
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             260
+
+Notice from spectre during transient analysis `transient2'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.052 V
+I: I(VVDD:p) = 62.74 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (25.0 %)      2 (33.3 %)      3 (34.5 %)
+         4 (100.0 %)     5 (9.8 %)       6 (2.1 %)       7 (100.0 %)
+         8 (2.1 %)       9 (100.0 %)    10 (2.9 %)      11 (100.0 %)
+        Total: 609.8%
+Initial condition solution time: CPU = 5.736 ms, elapsed = 6.16121 ms.
+Intrinsic tran analysis time:    CPU = 191.527 ms, elapsed = 273.239 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt1
+Total time required for tran analysis `transient2': CPU = 200.789 ms, elapsed =
+        294.961 ms, util. = 68.1%.
+Time accumulated: CPU = 1.21966 s, elapsed = 2.8709 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*************************
+Alter Group `altergroup2'
+*************************
+Time for altergroup2: CPU = 5.425 ms, elapsed = 5.71799 ms.
+Time accumulated: CPU = 1.2252 s, elapsed = 2.87776 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient3': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.124 ms, elapsed = 5.12719 ms.
+
+Notice from spectre during transient analysis `transient3'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient3.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7......6.
+
+Notice from spectre at time = 873.358 ps during transient analysis
+        `transient3'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6...
+
+Notice from spectre at time = 913.358 ps during transient analysis
+        `transient3'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6....
+
+Notice from spectre at time = 953.358 ps during transient analysis
+        `transient3'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6.....
+
+Notice from spectre at time = 993.358 ps during transient analysis
+        `transient3'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6......5
+
+Notice from spectre at time = 1.03336 ns during transient analysis
+        `transient3'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             236
+
+Notice from spectre during transient analysis `transient3'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.03 V
+I: I(VVDD:p) = 61.32 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (28.0 %)      2 (30.4 %)      3 (31.5 %)
+         4 (100.0 %)     5 (9.4 %)       6 (1.9 %)       7 (100.0 %)
+         8 (1.9 %)       9 (100.0 %)    10 (2.9 %)      11 (100.0 %)
+        Total: 606.0%
+Initial condition solution time: CPU = 5.212 ms, elapsed = 5.94497 ms.
+Intrinsic tran analysis time:    CPU = 167.203 ms, elapsed = 272.221 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt2
+Total time required for tran analysis `transient3': CPU = 175.74 ms, elapsed =
+        295.796 ms, util. = 59.4%.
+Time accumulated: CPU = 1.40771 s, elapsed = 3.25571 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    4 notices suppressed.
+
+
+*************************
+Alter Group `altergroup3'
+*************************
+Time for altergroup3: CPU = 5.38 ms, elapsed = 6.984 ms.
+Time accumulated: CPU = 1.41322 s, elapsed = 3.26448 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient4': time = (0 s -> 2 ns)
+*****************************************************
+
+Notice from spectre during IC analysis `timeSweep_cloned_3', during transient
+        analysis `transient4'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(ncell7.net15) = -3.05512 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 6.078 ms, elapsed = 14.3089 ms.
+
+Notice from spectre during transient analysis `transient4'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient4.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 0 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7.....
+
+Notice from spectre at time = 781.396 ps during transient analysis
+        `transient4'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......
+
+Notice from spectre at time = 821.396 ps during transient analysis
+        `transient4'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6.
+
+Notice from spectre at time = 861.396 ps during transient analysis
+        `transient4'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6..
+
+Notice from spectre at time = 901.396 ps during transient analysis
+        `transient4'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6....
+
+Notice from spectre at time = 941.396 ps during transient analysis
+        `transient4'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             269
+
+Notice from spectre during transient analysis `transient4'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.158 V
+I: I(VVDD:p) = 88.31 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (30.2 %)      2 (27.3 %)      3 (28.1 %)
+         4 (100.0 %)     5 (9.6 %)       6 (1.6 %)       7 (100.0 %)
+         8 (1.9 %)       9 (100.0 %)    10 (2.4 %)      11 (100.0 %)
+        Total: 601.2%
+Initial condition solution time: CPU = 6.224 ms, elapsed = 14.9639 ms.
+Intrinsic tran analysis time:    CPU = 201.57 ms, elapsed = 435.463 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt3
+Total time required for tran analysis `transient4': CPU = 211.404 ms, elapsed =
+        515.944 ms, util. = 41%.
+Time accumulated: CPU = 1.63166 s, elapsed = 3.84175 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    8 notices suppressed.
+
+
+*************************
+Alter Group `altergroup4'
+*************************
+Time for altergroup4: CPU = 5.942 ms, elapsed = 7.38716 ms.
+Time accumulated: CPU = 1.63773 s, elapsed = 3.85063 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient5': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.531 ms, elapsed = 5.53322 ms.
+
+Notice from spectre during transient analysis `transient5'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient5.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 50 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7....
+
+Notice from spectre at time = 740.29 ps during transient analysis
+        `transient5'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 780.29 ps during transient analysis
+        `transient5'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......
+
+Notice from spectre at time = 820.29 ps during transient analysis
+        `transient5'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6.
+
+Notice from spectre at time = 860.29 ps during transient analysis
+        `transient5'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6..
+
+Notice from spectre at time = 900.29 ps during transient analysis
+        `transient5'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             251
+
+Notice from spectre during transient analysis `transient5'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.147 V
+I: I(VVDD:p) = 84.69 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (28.5 %)      2 (24.6 %)      3 (29.5 %)
+         4 (100.0 %)     5 (9.5 %)       6 (1.7 %)       7 (100.0 %)
+         8 (4.8 %)       9 (100.0 %)    10 (2.4 %)      11 (100.0 %)
+        Total: 601.0%
+Initial condition solution time: CPU = 5.631 ms, elapsed = 6.38485 ms.
+Intrinsic tran analysis time:    CPU = 187.025 ms, elapsed = 337.163 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt4
+Total time required for tran analysis `transient5': CPU = 196.688 ms, elapsed =
+        365.038 ms, util. = 53.9%.
+Time accumulated: CPU = 1.84164 s, elapsed = 4.28069 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    10 notices suppressed.
+
+
+*************************
+Alter Group `altergroup5'
+*************************
+Time for altergroup5: CPU = 6.51 ms, elapsed = 7.82609 ms.
+Time accumulated: CPU = 1.84829 s, elapsed = 4.28993 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient6': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.918 ms, elapsed = 5.91993 ms.
+
+Notice from spectre during transient analysis `transient6'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient6.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7......6......5......4......3......2......1.....
+
+Notice from spectre at time = 1.97716 ns during transient analysis
+        `transient6'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5......4......3......2......1......
+
+Notice from spectre at time = 2 ns during transient analysis `transient6'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             240
+
+Notice from spectre during transient analysis `transient6'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.131 V
+I: I(VVDD:p) = 80.53 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (30.2 %)      2 (23.6 %)      3 (27.5 %)
+         4 (100.0 %)     5 (10.0 %)      6 (2.8 %)       7 (100.0 %)
+         8 (5.3 %)       9 (100.0 %)    10 (5.9 %)      11 (100.0 %)
+        Total: 605.2%
+Initial condition solution time: CPU = 6.007 ms, elapsed = 7.45797 ms.
+Intrinsic tran analysis time:    CPU = 173.23 ms, elapsed = 303.788 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt5
+Total time required for tran analysis `transient6': CPU = 182.798 ms, elapsed =
+        334.054 ms, util. = 54.7%.
+Time accumulated: CPU = 2.03678 s, elapsed = 4.66693 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*************************
+Alter Group `altergroup6'
+*************************
+Time for altergroup6: CPU = 5.587 ms, elapsed = 6.00314 ms.
+Time accumulated: CPU = 2.04248 s, elapsed = 4.67489 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient7': time = (0 s -> 2 ns)
+*****************************************************
+
+Notice from spectre during IC analysis `timeSweep_cloned_6', during transient
+        analysis `transient7'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(ncell3.net15) = -2.9966 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 6.205 ms, elapsed = 7.78699 ms.
+
+Notice from spectre during transient analysis `transient7'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient7.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 0 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7.
+
+Notice from spectre at time = 670.616 ps during transient analysis
+        `transient7'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7..
+
+Notice from spectre at time = 710.616 ps during transient analysis
+        `transient7'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7....
+
+Notice from spectre at time = 750.616 ps during transient analysis
+        `transient7'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 790.616 ps during transient analysis
+        `transient7'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6
+
+Notice from spectre at time = 830.616 ps during transient analysis
+        `transient7'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             263
+
+Notice from spectre during transient analysis `transient7'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.253 V
+I: I(VVDD:p) = 113.1 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (32.0 %)      2 (22.2 %)      3 (25.9 %)
+         4 (100.0 %)     5 (11.3 %)      6 (2.6 %)       7 (100.0 %)
+         8 (5.0 %)       9 (100.0 %)    10 (6.8 %)      11 (100.0 %)
+        Total: 605.8%
+Initial condition solution time: CPU = 6.255 ms, elapsed = 8.16607 ms.
+Intrinsic tran analysis time:    CPU = 189.441 ms, elapsed = 360.266 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt6
+Total time required for tran analysis `transient7': CPU = 198.908 ms, elapsed =
+        387.947 ms, util. = 51.3%.
+Time accumulated: CPU = 2.24755 s, elapsed = 5.10624 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    9 notices suppressed.
+
+
+*************************
+Alter Group `altergroup7'
+*************************
+Time for altergroup7: CPU = 5.651 ms, elapsed = 6.82211 ms.
+Time accumulated: CPU = 2.25333 s, elapsed = 5.11526 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient8': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.676 ms, elapsed = 5.67818 ms.
+
+Notice from spectre during transient analysis `transient8'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient8.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 50 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7..
+
+Notice from spectre at time = 689.649 ps during transient analysis
+        `transient8'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7...
+
+Notice from spectre at time = 729.649 ps during transient analysis
+        `transient8'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 769.649 ps during transient analysis
+        `transient8'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......
+
+Notice from spectre at time = 809.649 ps during transient analysis
+        `transient8'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6
+
+Notice from spectre at time = 849.649 ps during transient analysis
+        `transient8'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             249
+
+Notice from spectre during transient analysis `transient8'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.244 V
+I: I(VVDD:p) = 107.1 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (32.0 %)      2 (20.8 %)      3 (26.6 %)
+         4 (100.0 %)     5 (14.3 %)      6 (2.4 %)       7 (100.0 %)
+         8 (4.6 %)       9 (100.0 %)    10 (6.3 %)      11 (100.0 %)
+        Total: 607.0%
+Initial condition solution time: CPU = 5.757 ms, elapsed = 6.64592 ms.
+Intrinsic tran analysis time:    CPU = 185.747 ms, elapsed = 310.926 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt7
+Total time required for tran analysis `transient8': CPU = 195.038 ms, elapsed =
+        336.975 ms, util. = 57.9%.
+Time accumulated: CPU = 2.45624 s, elapsed = 5.53259 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    11 notices suppressed.
+
+
+*************************
+Alter Group `altergroup8'
+*************************
+Time for altergroup8: CPU = 5.583 ms, elapsed = 6.459 ms.
+Time accumulated: CPU = 2.462 s, elapsed = 5.54086 s.
+Peak resident memory used = 157 Mbytes.
+
+
+*****************************************************
+Transient Analysis `transient9': time = (0 s -> 2 ns)
+*****************************************************
+DC simulation time: CPU = 5.041 ms, elapsed = 5.05805 ms.
+
+Notice from spectre during transient analysis `transient9'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient9.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7...
+
+Notice from spectre at time = 736.649 ps during transient analysis
+        `transient9'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 776.649 ps during transient analysis
+        `transient9'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......
+
+Notice from spectre at time = 816.649 ps during transient analysis
+        `transient9'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6.
+
+Notice from spectre at time = 856.649 ps during transient analysis
+        `transient9'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6..
+
+Notice from spectre at time = 896.649 ps during transient analysis
+        `transient9'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             234
+
+Notice from spectre during transient analysis `transient9'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.227 V
+I: I(VVDD:p) = 102.5 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (29.8 %)      2 (19.5 %)      3 (28.1 %)
+         4 (100.0 %)     5 (14.5 %)      6 (2.8 %)       7 (100.0 %)
+         8 (6.2 %)       9 (100.0 %)    10 (5.9 %)      11 (100.0 %)
+        Total: 606.7%
+Initial condition solution time: CPU = 5.117 ms, elapsed = 5.67794 ms.
+Intrinsic tran analysis time:    CPU = 165.426 ms, elapsed = 291.078 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt8
+Total time required for tran analysis `transient9': CPU = 173.724 ms, elapsed =
+        314.973 ms, util. = 55.2%.
+Time accumulated: CPU = 2.64129 s, elapsed = 5.90875 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    12 notices suppressed.
+
+
+*************************
+Alter Group `altergroup9'
+*************************
+Time for altergroup9: CPU = 5.636 ms, elapsed = 6.64401 ms.
+Time accumulated: CPU = 2.64703 s, elapsed = 5.91676 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient10': time = (0 s -> 2 ns)
+******************************************************
+
+Notice from spectre during IC analysis `timeSweep_cloned_9', during transient
+        analysis `transient10'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(ncell9.net15) = -2.9263 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 6.167 ms, elapsed = 7.87401 ms.
+
+Notice from spectre during transient analysis `transient10'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient10.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 0 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7
+
+Notice from spectre at time = 635.243 ps during transient analysis
+        `transient10'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7.
+
+Notice from spectre at time = 675.243 ps during transient analysis
+        `transient10'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7...
+
+Notice from spectre at time = 715.243 ps during transient analysis
+        `transient10'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7....
+
+Notice from spectre at time = 755.243 ps during transient analysis
+        `transient10'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 795.243 ps during transient analysis
+        `transient10'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             251
+
+Notice from spectre during transient analysis `transient10'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.349 V
+I: I(VVDD:p) = 142.2 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (28.0 %)      2 (19.9 %)      3 (29.6 %)
+         4 (100.0 %)     5 (13.8 %)      6 (3.2 %)       7 (100.0 %)
+         8 (6.8 %)       9 (100.0 %)    10 (5.8 %)      11 (100.0 %)
+        Total: 607.1%
+Initial condition solution time: CPU = 6.224 ms, elapsed = 8.24404 ms.
+Intrinsic tran analysis time:    CPU = 183.014 ms, elapsed = 339.754 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt9
+Total time required for tran analysis `transient10': CPU = 192.577 ms, elapsed
+        = 379.966 ms, util. = 50.7%.
+Time accumulated: CPU = 2.84519 s, elapsed = 6.33887 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    16 notices suppressed.
+
+
+**************************
+Alter Group `altergroup10'
+**************************
+Time for altergroup10: CPU = 5.154 ms, elapsed = 6.18291 ms.
+Time accumulated: CPU = 2.85044 s, elapsed = 6.34636 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient11': time = (0 s -> 2 ns)
+******************************************************
+DC simulation time: CPU = 5.557 ms, elapsed = 5.55921 ms.
+
+Notice from spectre during transient analysis `transient11'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient11.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 50 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7..
+
+Notice from spectre at time = 697.613 ps during transient analysis
+        `transient11'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7...
+
+Notice from spectre at time = 737.613 ps during transient analysis
+        `transient11'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 777.613 ps during transient analysis
+        `transient11'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......
+
+Notice from spectre at time = 817.613 ps during transient analysis
+        `transient11'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6.
+
+Notice from spectre at time = 857.613 ps during transient analysis
+        `transient11'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             248
+
+Notice from spectre during transient analysis `transient11'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.34 V
+I: I(VVDD:p) = 131.3 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (100.0 %)     1 (26.7 %)      2 (20.5 %)      3 (31.5 %)
+         4 (100.0 %)     5 (13.5 %)      6 (3.5 %)       7 (100.0 %)
+         8 (6.7 %)       9 (100.0 %)    10 (6.1 %)      11 (100.0 %)
+        Total: 608.4%
+Initial condition solution time: CPU = 5.635 ms, elapsed = 6.04606 ms.
+Intrinsic tran analysis time:    CPU = 180.21 ms, elapsed = 301.559 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt10
+Total time required for tran analysis `transient11': CPU = 189.126 ms, elapsed
+        = 324.477 ms, util. = 58.3%.
+Time accumulated: CPU = 3.04538 s, elapsed = 6.73776 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    12 notices suppressed.
+
+
+**************************
+Alter Group `altergroup11'
+**************************
+Time for altergroup11: CPU = 6.493 ms, elapsed = 7.38192 ms.
+Time accumulated: CPU = 3.052 s, elapsed = 6.74629 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient12': time = (0 s -> 2 ns)
+******************************************************
+DC simulation time: CPU = 4.947 ms, elapsed = 4.94885 ms.
+
+Notice from spectre during transient analysis `transient12'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient12.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7..
+
+Notice from spectre at time = 701.748 ps during transient analysis
+        `transient12'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7....
+
+Notice from spectre at time = 741.748 ps during transient analysis
+        `transient12'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 781.748 ps during transient analysis
+        `transient12'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......
+
+Notice from spectre at time = 821.748 ps during transient analysis
+        `transient12'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6.
+
+Notice from spectre at time = 861.748 ps during transient analysis
+        `transient12'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             231
+
+Notice from spectre during transient analysis `transient12'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.328 V
+I: I(VVDD:p) = 123.1 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (98.0 %)      1 (26.8 %)      2 (22.1 %)      3 (32.3 %)
+         4 (100.0 %)     5 (14.3 %)      6 (4.1 %)       7 (100.0 %)
+         8 (7.6 %)       9 (100.0 %)    10 (8.0 %)      11 (100.0 %)
+        Total: 613.3%
+Initial condition solution time: CPU = 5.039 ms, elapsed = 5.36704 ms.
+Intrinsic tran analysis time:    CPU = 165.521 ms, elapsed = 297.134 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt11
+Total time required for tran analysis `transient12': CPU = 174.012 ms, elapsed
+        = 344.139 ms, util. = 50.6%.
+Time accumulated: CPU = 3.23135 s, elapsed = 7.14662 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    12 notices suppressed.
+
+
+**************************
+Alter Group `altergroup12'
+**************************
+Time for altergroup12: CPU = 5.289 ms, elapsed = 6.28281 ms.
+Time accumulated: CPU = 3.23676 s, elapsed = 7.15409 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient13': time = (0 s -> 2 ns)
+******************************************************
+
+Notice from spectre during IC analysis `timeSweep_cloned_12', during transient
+        analysis `transient13'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(ncell7.net15) = -2.84683 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 5.939 ms, elapsed = 8.46386 ms.
+
+Notice from spectre during transient analysis `transient13'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient13.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 0 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7......6......5......4......3......2...
+
+Notice from spectre at time = 1.72841 ns during transient analysis
+        `transient13'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5......4......3......2....
+
+Notice from spectre at time = 1.76841 ns during transient analysis
+        `transient13'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6......5......4......3......2......
+
+Notice from spectre at time = 1.80841 ns during transient analysis
+        `transient13'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7......6......5......4......3......2......1
+
+Notice from spectre at time = 1.84841 ns during transient analysis
+        `transient13'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......6......5......4......3......2......1..
+
+Notice from spectre at time = 1.88841 ns during transient analysis
+        `transient13'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             250
+
+Notice from spectre during transient analysis `transient13'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.442 V
+I: I(VVDD:p) = 172.7 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (93.5 %)      1 (31.7 %)      2 (21.1 %)      3 (31.2 %)
+         4 (100.0 %)     5 (14.9 %)      6 (6.2 %)       7 (100.0 %)
+         8 (7.1 %)       9 (100.0 %)    10 (7.3 %)      11 (100.0 %)
+        Total: 613.0%
+Initial condition solution time: CPU = 5.983 ms, elapsed = 9.17006 ms.
+Intrinsic tran analysis time:    CPU = 214.906 ms, elapsed = 508.728 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt12
+Total time required for tran analysis `transient13': CPU = 224.552 ms, elapsed
+        = 584.245 ms, util. = 38.4%.
+Time accumulated: CPU = 3.46906 s, elapsed = 7.79016 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    3 notices suppressed.
+
+
+**************************
+Alter Group `altergroup13'
+**************************
+Time for altergroup13: CPU = 10.494 ms, elapsed = 11.426 ms.
+Time accumulated: CPU = 3.47986 s, elapsed = 7.80287 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient14': time = (0 s -> 2 ns)
+******************************************************
+DC simulation time: CPU = 5.416 ms, elapsed = 5.41806 ms.
+
+Notice from spectre during transient analysis `transient14'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient14.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 50 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......
+
+Notice from spectre at time = 614.201 ps during transient analysis
+        `transient14'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7
+
+Notice from spectre at time = 654.201 ps during transient analysis
+        `transient14'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7..
+
+Notice from spectre at time = 694.201 ps during transient analysis
+        `transient14'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7...
+
+Notice from spectre at time = 734.201 ps during transient analysis
+        `transient14'.
+    Found trapezoidal ringing on node VGND:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 774.201 ps during transient analysis
+        `transient14'.
+    Found trapezoidal ringing on node VGND:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             244
+
+Notice from spectre during transient analysis `transient14'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.436 V
+I: I(VVDD:p) = 158.4 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (90.5 %)      1 (35.0 %)      2 (20.3 %)      3 (30.0 %)
+         4 (100.0 %)     5 (17.0 %)      6 (6.0 %)       7 (100.0 %)
+         8 (6.8 %)       9 (100.0 %)    10 (7.5 %)      11 (100.0 %)
+        Total: 613.1%
+Initial condition solution time: CPU = 5.493 ms, elapsed = 5.97692 ms.
+Intrinsic tran analysis time:    CPU = 191.308 ms, elapsed = 371.336 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt13
+Total time required for tran analysis `transient14': CPU = 203.015 ms, elapsed
+        = 437.71 ms, util. = 46.4%.
+Time accumulated: CPU = 3.69025 s, elapsed = 8.30232 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    17 notices suppressed.
+
+
+**************************
+Alter Group `altergroup14'
+**************************
+Time for altergroup14: CPU = 5.727 ms, elapsed = 6.62088 ms.
+Time accumulated: CPU = 3.69611 s, elapsed = 8.31028 s.
+Peak resident memory used = 157 Mbytes.
+
+
+******************************************************
+Transient Analysis `transient15': time = (0 s -> 2 ns)
+******************************************************
+DC simulation time: CPU = 4.835 ms, elapsed = 4.84204 ms.
+
+Notice from spectre during transient analysis `transient15'.
+    No outputs were found. Loosening output filter criterion to `allpub'.
+
+
+Opening the PSFXL file ./nand_ff.raw/transient15.tran.tran ...
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 2 ns
+    step = 100 fs
+    maxstep = 40 ps
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 1e-03
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 125 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = moderate
+    method = traponly
+    lteratio = 3.5
+    relref = sigglobal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 probe  2       
+                 save   3       (current)
+                 save   195     (voltage)
+
+......9......8......7.
+
+Notice from spectre at time = 663.341 ps during transient analysis
+        `transient15'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7..
+
+Notice from spectre at time = 703.341 ps during transient analysis
+        `transient15'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7....
+
+Notice from spectre at time = 743.341 ps during transient analysis
+        `transient15'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7.....
+
+Notice from spectre at time = 783.341 ps during transient analysis
+        `transient15'.
+    Found trapezoidal ringing on node VVDD:p.
+
+......9......8......7......
+
+Notice from spectre at time = 823.341 ps during transient analysis
+        `transient15'.
+    Found trapezoidal ringing on node VVDD:p.
+        Further occurrences of this notice will be suppressed (except in log
+        file).
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             233
+
+Notice from spectre during transient analysis `transient15'.
+    Trapezoidal ringing is detected during tran analysis.
+        Please use method=trap for better results and performance.
+
+
+Maximum value achieved for any signal of each quantity: 
+V: V(ncell10.2:Q) = 1.429 V
+I: I(VVDD:p) = 147.2 uA
+If your circuit contains signals of the same quantity that are vastly different
+        in size (such as high voltage circuitry combined with low voltage
+        control circuitry), you should consider specifying global option
+        `bin_relref=yes'.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (88.6 %)      1 (34.7 %)      2 (20.0 %)      3 (29.0 %)
+         4 (100.0 %)     5 (20.9 %)      6 (6.3 %)       7 (100.0 %)
+         8 (6.7 %)       9 (100.0 %)    10 (7.9 %)      11 (100.0 %)
+        Total: 614.1%
+Initial condition solution time: CPU = 4.905 ms, elapsed = 5.8279 ms.
+Intrinsic tran analysis time:    CPU = 189.87 ms, elapsed = 311.151 ms.
+Opening mt file: 
+        /CASNFSHOME2/home/sstatthoudakis/Documents/spectre/Gates/NAND2/corners/corner_pin2/wire_load/nand_ff.mt14
+Total time required for tran analysis `transient15': CPU = 200.147 ms, elapsed
+        = 336.129 ms, util. = 59.5%.
+Time accumulated: CPU = 3.90455 s, elapsed = 8.7081 s.
+Peak resident memory used = 157 Mbytes.
+
+
+Notice from spectre.
+    13 notices suppressed.
+
+Licensing Information:
+Lic Summary:
+[15:50:18.123954] Cdslmd servers:5280@10.64.82.10
+[15:50:18.123978] Feature usage summary:
+[15:50:18.123979] Virtuoso_Multi_mode_Simulation
+
+
+Aggregate audit (3:50:18 PM, Wed Oct 29, 2025):
+Time used: CPU = 3.93 s, elapsed = 8.74 s, util. = 45%.
+Time spent in licensing: elapsed = 37.2 ms.
+Peak memory used = 157 Mbytes.
+Simulation started at: 3:50:09 PM, Wed Oct 29, 2025, ended at: 3:50:18 PM, Wed
+        Oct 29, 2025, with elapsed time (wall clock): 8.74 s.
+spectre completes with 0 errors, 12 warnings, and 127 notices.

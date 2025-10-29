@@ -1,0 +1,1642 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Wed Oct 29 14:37:57 2025"
+"psfversion" "1.4.0"
+"simulator" "spectre"
+"version" "23.1.0.242.isr1"
+"date" "2:37:57 PM, Wed Oct 29, 2025"
+"design" "// Stavros Stathoudakis"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"transient1-tran" "analysisInst" (
+"tran"
+"transient1.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient1': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient2-tran" "analysisInst" (
+"tran"
+"transient2.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient2': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient3-tran" "analysisInst" (
+"tran"
+"transient3.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient3': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient4-tran" "analysisInst" (
+"tran"
+"transient4.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient4': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient5-tran" "analysisInst" (
+"tran"
+"transient5.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient5': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient6-tran" "analysisInst" (
+"tran"
+"transient6.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient6': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient7-tran" "analysisInst" (
+"tran"
+"transient7.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient7': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient8-tran" "analysisInst" (
+"tran"
+"transient8.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient8': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient9-tran" "analysisInst" (
+"tran"
+"transient9.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient9': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient10-tran" "analysisInst" (
+"tran"
+"transient10.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient10': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient11-tran" "analysisInst" (
+"tran"
+"transient11.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient11': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient12-tran" "analysisInst" (
+"tran"
+"transient12.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient12': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient13-tran" "analysisInst" (
+"tran"
+"transient13.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient13': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient14-tran" "analysisInst" (
+"tran"
+"transient14.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient14': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient15-tran" "analysisInst" (
+"tran"
+"transient15.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient15': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient16-tran" "analysisInst" (
+"tran"
+"transient16.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient16': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient17-tran" "analysisInst" (
+"tran"
+"transient17.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient17': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient18-tran" "analysisInst" (
+"tran"
+"transient18.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient18': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient19-tran" "analysisInst" (
+"tran"
+"transient19.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient19': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient20-tran" "analysisInst" (
+"tran"
+"transient20.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient20': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient21-tran" "analysisInst" (
+"tran"
+"transient21.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient21': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient22-tran" "analysisInst" (
+"tran"
+"transient22.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient22': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient23-tran" "analysisInst" (
+"tran"
+"transient23.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient23': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient24-tran" "analysisInst" (
+"tran"
+"transient24.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient24': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient25-tran" "analysisInst" (
+"tran"
+"transient25.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient25': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient26-tran" "analysisInst" (
+"tran"
+"transient26.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient26': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient27-tran" "analysisInst" (
+"tran"
+"transient27.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient27': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient28-tran" "analysisInst" (
+"tran"
+"transient28.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient28': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient29-tran" "analysisInst" (
+"tran"
+"transient29.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient29': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient30-tran" "analysisInst" (
+"tran"
+"transient30.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient30': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient31-tran" "analysisInst" (
+"tran"
+"transient31.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient31': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient32-tran" "analysisInst" (
+"tran"
+"transient32.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient32': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient33-tran" "analysisInst" (
+"tran"
+"transient33.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient33': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient34-tran" "analysisInst" (
+"tran"
+"transient34.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient34': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient35-tran" "analysisInst" (
+"tran"
+"transient35.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient35': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient36-tran" "analysisInst" (
+"tran"
+"transient36.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient36': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient37-tran" "analysisInst" (
+"tran"
+"transient37.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient37': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient38-tran" "analysisInst" (
+"tran"
+"transient38.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient38': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient39-tran" "analysisInst" (
+"tran"
+"transient39.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient39': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient40-tran" "analysisInst" (
+"tran"
+"transient40.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient40': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient41-tran" "analysisInst" (
+"tran"
+"transient41.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient41': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient42-tran" "analysisInst" (
+"tran"
+"transient42.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient42': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient43-tran" "analysisInst" (
+"tran"
+"transient43.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient43': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient44-tran" "analysisInst" (
+"tran"
+"transient44.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient44': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient45-tran" "analysisInst" (
+"tran"
+"transient45.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient45': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient46-tran" "analysisInst" (
+"tran"
+"transient46.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient46': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient47-tran" "analysisInst" (
+"tran"
+"transient47.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient47': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient48-tran" "analysisInst" (
+"tran"
+"transient48.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient48': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient49-tran" "analysisInst" (
+"tran"
+"transient49.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient49': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient50-tran" "analysisInst" (
+"tran"
+"transient50.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient50': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient51-tran" "analysisInst" (
+"tran"
+"transient51.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient51': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient52-tran" "analysisInst" (
+"tran"
+"transient52.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient52': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient53-tran" "analysisInst" (
+"tran"
+"transient53.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient53': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient54-tran" "analysisInst" (
+"tran"
+"transient54.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient54': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient55-tran" "analysisInst" (
+"tran"
+"transient55.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient55': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient56-tran" "analysisInst" (
+"tran"
+"transient56.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient56': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient57-tran" "analysisInst" (
+"tran"
+"transient57.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient57': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient58-tran" "analysisInst" (
+"tran"
+"transient58.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient58': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient59-tran" "analysisInst" (
+"tran"
+"transient59.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient59': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient60-tran" "analysisInst" (
+"tran"
+"transient60.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient60': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient61-tran" "analysisInst" (
+"tran"
+"transient61.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient61': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient62-tran" "analysisInst" (
+"tran"
+"transient62.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient62': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient63-tran" "analysisInst" (
+"tran"
+"transient63.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient63': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient64-tran" "analysisInst" (
+"tran"
+"transient64.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient64': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient65-tran" "analysisInst" (
+"tran"
+"transient65.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient65': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient66-tran" "analysisInst" (
+"tran"
+"transient66.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient66': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient67-tran" "analysisInst" (
+"tran"
+"transient67.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient67': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient68-tran" "analysisInst" (
+"tran"
+"transient68.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient68': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient69-tran" "analysisInst" (
+"tran"
+"transient69.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient69': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient70-tran" "analysisInst" (
+"tran"
+"transient70.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient70': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient71-tran" "analysisInst" (
+"tran"
+"transient71.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient71': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient72-tran" "analysisInst" (
+"tran"
+"transient72.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient72': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient73-tran" "analysisInst" (
+"tran"
+"transient73.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient73': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient74-tran" "analysisInst" (
+"tran"
+"transient74.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient74': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient75-tran" "analysisInst" (
+"tran"
+"transient75.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient75': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient76-tran" "analysisInst" (
+"tran"
+"transient76.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient76': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient77-tran" "analysisInst" (
+"tran"
+"transient77.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient77': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient78-tran" "analysisInst" (
+"tran"
+"transient78.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient78': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient79-tran" "analysisInst" (
+"tran"
+"transient79.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient79': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient80-tran" "analysisInst" (
+"tran"
+"transient80.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient80': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient81-tran" "analysisInst" (
+"tran"
+"transient81.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient81': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient82-tran" "analysisInst" (
+"tran"
+"transient82.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient82': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient83-tran" "analysisInst" (
+"tran"
+"transient83.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient83': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient84-tran" "analysisInst" (
+"tran"
+"transient84.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient84': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient85-tran" "analysisInst" (
+"tran"
+"transient85.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient85': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient86-tran" "analysisInst" (
+"tran"
+"transient86.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient86': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient87-tran" "analysisInst" (
+"tran"
+"transient87.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient87': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient88-tran" "analysisInst" (
+"tran"
+"transient88.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient88': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient89-tran" "analysisInst" (
+"tran"
+"transient89.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient89': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient90-tran" "analysisInst" (
+"tran"
+"transient90.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient90': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient91-tran" "analysisInst" (
+"tran"
+"transient91.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient91': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient92-tran" "analysisInst" (
+"tran"
+"transient92.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient92': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient93-tran" "analysisInst" (
+"tran"
+"transient93.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient93': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient94-tran" "analysisInst" (
+"tran"
+"transient94.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient94': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient95-tran" "analysisInst" (
+"tran"
+"transient95.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient95': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient96-tran" "analysisInst" (
+"tran"
+"transient96.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient96': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient97-tran" "analysisInst" (
+"tran"
+"transient97.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient97': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient98-tran" "analysisInst" (
+"tran"
+"transient98.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient98': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient99-tran" "analysisInst" (
+"tran"
+"transient99.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient99': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient100-tran" "analysisInst" (
+"tran"
+"transient100.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient100': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient101-tran" "analysisInst" (
+"tran"
+"transient101.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient101': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient102-tran" "analysisInst" (
+"tran"
+"transient102.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient102': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient103-tran" "analysisInst" (
+"tran"
+"transient103.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient103': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient104-tran" "analysisInst" (
+"tran"
+"transient104.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient104': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient105-tran" "analysisInst" (
+"tran"
+"transient105.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient105': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient106-tran" "analysisInst" (
+"tran"
+"transient106.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient106': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient107-tran" "analysisInst" (
+"tran"
+"transient107.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient107': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient108-tran" "analysisInst" (
+"tran"
+"transient108.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient108': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient109-tran" "analysisInst" (
+"tran"
+"transient109.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient109': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient110-tran" "analysisInst" (
+"tran"
+"transient110.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient110': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient111-tran" "analysisInst" (
+"tran"
+"transient111.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient111': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient112-tran" "analysisInst" (
+"tran"
+"transient112.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient112': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient113-tran" "analysisInst" (
+"tran"
+"transient113.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient113': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient114-tran" "analysisInst" (
+"tran"
+"transient114.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient114': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient115-tran" "analysisInst" (
+"tran"
+"transient115.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient115': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient116-tran" "analysisInst" (
+"tran"
+"transient116.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient116': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient117-tran" "analysisInst" (
+"tran"
+"transient117.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient117': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient118-tran" "analysisInst" (
+"tran"
+"transient118.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient118': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient119-tran" "analysisInst" (
+"tran"
+"transient119.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient119': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient120-tran" "analysisInst" (
+"tran"
+"transient120.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient120': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient121-tran" "analysisInst" (
+"tran"
+"transient121.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient121': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient122-tran" "analysisInst" (
+"tran"
+"transient122.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient122': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient123-tran" "analysisInst" (
+"tran"
+"transient123.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient123': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient124-tran" "analysisInst" (
+"tran"
+"transient124.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient124': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient125-tran" "analysisInst" (
+"tran"
+"transient125.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient125': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient126-tran" "analysisInst" (
+"tran"
+"transient126.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient126': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient127-tran" "analysisInst" (
+"tran"
+"transient127.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient127': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient128-tran" "analysisInst" (
+"tran"
+"transient128.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient128': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient129-tran" "analysisInst" (
+"tran"
+"transient129.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient129': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient130-tran" "analysisInst" (
+"tran"
+"transient130.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient130': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient131-tran" "analysisInst" (
+"tran"
+"transient131.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient131': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient132-tran" "analysisInst" (
+"tran"
+"transient132.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient132': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient133-tran" "analysisInst" (
+"tran"
+"transient133.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient133': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient134-tran" "analysisInst" (
+"tran"
+"transient134.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient134': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient135-tran" "analysisInst" (
+"tran"
+"transient135.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient135': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient136-tran" "analysisInst" (
+"tran"
+"transient136.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient136': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient137-tran" "analysisInst" (
+"tran"
+"transient137.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient137': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient138-tran" "analysisInst" (
+"tran"
+"transient138.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient138': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient139-tran" "analysisInst" (
+"tran"
+"transient139.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient139': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient140-tran" "analysisInst" (
+"tran"
+"transient140.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient140': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient141-tran" "analysisInst" (
+"tran"
+"transient141.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient141': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient142-tran" "analysisInst" (
+"tran"
+"transient142.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient142': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient143-tran" "analysisInst" (
+"tran"
+"transient143.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient143': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient144-tran" "analysisInst" (
+"tran"
+"transient144.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient144': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient145-tran" "analysisInst" (
+"tran"
+"transient145.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient145': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient146-tran" "analysisInst" (
+"tran"
+"transient146.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient146': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient147-tran" "analysisInst" (
+"tran"
+"transient147.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient147': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+END

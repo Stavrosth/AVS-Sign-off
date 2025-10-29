@@ -1,0 +1,190 @@
+HEADER
+"PSFversion" "1.00"
+"Log Generator" "drlLog rev. 1.0"
+"Log Time Stamp" "Wed Oct 29 15:49:50 2025"
+"psfversion" "1.4.0"
+"simulator" "spectre"
+"version" "23.1.0.242.isr1"
+"date" "3:49:50 PM, Wed Oct 29, 2025"
+"design" "// Stavros Stathoudakis"
+"signalNameType" "spectre"
+"simMode" "Spectre"
+"measdgt" 0
+"ingold" 2
+"sst2usecolon" 0
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING *
+)
+VALUE
+"transient1-tran" "analysisInst" (
+"tran"
+"transient1.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient1': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient2-tran" "analysisInst" (
+"tran"
+"transient2.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient2': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient3-tran" "analysisInst" (
+"tran"
+"transient3.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient3': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient4-tran" "analysisInst" (
+"tran"
+"transient4.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient4': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient5-tran" "analysisInst" (
+"tran"
+"transient5.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient5': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient6-tran" "analysisInst" (
+"tran"
+"transient6.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient6': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient7-tran" "analysisInst" (
+"tran"
+"transient7.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient7': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient8-tran" "analysisInst" (
+"tran"
+"transient8.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient8': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient9-tran" "analysisInst" (
+"tran"
+"transient9.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient9': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient10-tran" "analysisInst" (
+"tran"
+"transient10.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient10': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient11-tran" "analysisInst" (
+"tran"
+"transient11.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient11': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient12-tran" "analysisInst" (
+"tran"
+"transient12.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient12': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient13-tran" "analysisInst" (
+"tran"
+"transient13.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient13': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient14-tran" "analysisInst" (
+"tran"
+"transient14.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient14': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+"transient15-tran" "analysisInst" (
+"tran"
+"transient15.tran.tran"
+"PSF"
+""
+("time")
+"Transient Analysis `transient15': time = (0 s -> 2 ns)"
+) PROP(
+"data_type" "swept_scalar"
+)
+
+END

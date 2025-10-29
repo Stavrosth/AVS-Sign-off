@@ -1,0 +1,784 @@
+// Stavros Stathoudakis
+simulator lang=spice
+
+.INCLUDE "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ihp013ng_include_all_slow.scs"
+.INCLUDE "/CASNFSHOME/home/tsaikaterini/IHP/IHP_Generation_files/130ng/ixc013ng_stdcell_rc.scs"
+
+.TEMP 0.0
+.PARAM VVDVAL=0.960
+.PARAM M=3
+.PARAM Capacitance=0.5pf
+VVDD VDD 0 'VVDVAL'
+VGND VSS 0 0.000000
+Vin  in1  0  PULSE(0 VVDVAL 5p 150p 150p 1n 2n)
+
+// Chain
+nor1 in1 vss out vdd vss NO2JIX0
+nor2 out vss out2 vdd vss NO2JIX0
+nor3 out2 vss out3 vdd vss NO2JIX0
+nor4 out3 vss out4 vdd vss NO2JIX0
+nor5 out4 vss out5 vdd vss NO2JIX0
+nor6 out5 vss out6 vdd vss NO2JIX0
+nor7 out6 vss out7 vdd vss NO2JIX0
+nor8 out7 vss out8 vdd vss NO2JIX0
+nor9 out8 vss out9 vdd vss NO2JIX0
+nor10 out9 vss out1 vdd vss NO2JIX0
+
+//Gate load starts
+.subckt FO4 out vdd vss
+nor11 out vss out11 vdd vss NO2JIX0
+nor12 out vss out12 vdd vss NO2JIX0
+nor13 out vss out13 vdd vss NO2JIX0
+.ends FO4
+
+// FO4 instantiation
+nor1_fanout4 out vdd vss FO4
+nor2_fanout4 out2 vdd vss FO4
+nor3_fanout4 out3 vdd vss FO4
+nor4_fanout4 out4 vdd vss FO4
+nor5_fanout4 out5 vdd vss FO4
+nor6_fanout4 out6 vdd vss FO4
+nor7_fanout4 out7 vdd vss FO4
+nor8_fanout4 out8 vdd vss FO4
+nor9_fanout4 out9 vdd vss FO4
+nor10_fanout4 out1 vdd vss FO4
+//Gate load ends
+
+
+
+.TRAN 1e-13 2e-09
+
+// Measurement of delay
+.meas tran delay_out6 when V(out6)='VVDVAL/2' rise=1
+.meas tran delay_out8 when V(out8)='VVDVAL/2' rise=1
+.meas tran delay_out8_out6 param='(delay_out8 - delay_out6)'
+
+.ALTER
+.TEMP 50.0 
+
+.ALTER
+.TEMP 125.0
+
+* ---- Auto-generated corners (SS) ----
+* VSTEP = 0.01
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=0.970
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=0.970
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=0.970
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=0.980
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=0.980
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=0.980
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=0.990
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=0.990
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=0.990
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.000
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.000
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.000
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.010
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.010
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.010
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.020
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.020
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.020
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.030
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.030
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.030
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.040
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.040
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.040
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.050
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.050
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.050
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.060
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.060
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.060
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.070
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.070
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.070
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.080
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.080
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.080
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.090
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.090
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.090
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.100
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.100
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.100
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.110
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.110
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.110
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.120
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.120
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.120
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.130
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.130
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.130
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.140
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.140
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.140
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.150
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.150
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.150
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.160
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.160
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.160
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.170
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.170
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.170
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.180
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.180
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.180
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.190
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.190
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.190
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.200
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.200
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.200
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.210
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.210
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.210
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.220
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.220
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.220
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.230
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.230
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.230
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.240
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.240
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.240
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.250
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.250
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.250
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.260
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.260
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.260
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.270
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.270
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.270
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.280
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.280
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.280
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.290
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.290
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.290
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.300
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.300
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.300
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.310
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.310
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.310
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.320
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.320
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.320
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.330
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.330
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.330
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.340
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.340
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.340
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.350
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.350
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.350
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.360
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.360
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.360
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.370
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.370
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.370
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.380
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.380
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.380
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.390
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.390
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.390
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.400
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.400
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.400
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.410
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.410
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.410
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.420
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.420
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.420
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.430
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.430
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.430
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 0.0
+.PARAM VVDVAL=1.440
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 50.0
+.PARAM VVDVAL=1.440
+
+* Auto .ALTER for fixed-V run
+.ALTER
+.TEMP 125.0
+.PARAM VVDVAL=1.440
+
