@@ -1,0 +1,8 @@
+*.log
+*.tran
+*.psfxl
+*.sig
+*.sqldb
+*.so
+
+*.mt*
