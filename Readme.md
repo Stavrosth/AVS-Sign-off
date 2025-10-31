@@ -1,13 +1,8 @@
 # AVS Sing-off | CASLab 2025 Summer Internship
-<p style="text-align:left;">
-   Author: Stavros Stathoudakis
-    <span style="float:right;">
-        Work Inspired by Christian Lütkemeyer
-
-<p style="text-align:left;">
-    Mentor: Akis Tsoumanis    
-    <span style="float:right;">
-        Supervising Professor: Christos Sotiriou
+**Author: Stavros Stathoudakis**  
+Mentor: Akis Tsoumanis  
+Supervising Professor: Christos Sotiriou  
+Inspired by Christian Lütkemeyer
 
 
 ## Project Goal 
