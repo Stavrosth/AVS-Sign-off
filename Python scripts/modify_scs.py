@@ -1,3 +1,10 @@
+"""
+modify_scs.py
+This script creates new .scs files for different cells. 
+It has as input an existing .scs file and modifies it to create a new .scs file with a different cell name and stable inputs.
+Stable inputs are the inputs of the cells that are either connected to VSS or VDD.
+"""
+
 import argparse
 import re
 

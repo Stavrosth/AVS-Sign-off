@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
 """
-run_full_flow.py
+run_all.py
 
 A master script to orchestrate the entire simulation and analysis workflow.
 This script provides a single entry point to run the three stages of the process:
@@ -41,7 +40,6 @@ def run_command(command: list, stage_name: str):
             command,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
-            # Use universal_newlines for compatibility with older Python 3 versions.
             universal_newlines=True,
             bufsize=1
         )
@@ -82,7 +80,6 @@ def main():
     # --- Arguments for create_corners.py ---
     corners_group = parser.add_argument_group('Corner Generation Options (for create_corners.py)')
     corners_group.add_argument("--pins", type=int, help="Number of input pins for multi-pin analysis.")
-    # --- NEW ARGUMENTS ---
     corners_group.add_argument("--pin-names", type=str, help="Comma-separated list of logical pin names (e.g., \"A,B\")")
     corners_group.add_argument(
         "--cell-map",
@@ -95,7 +92,6 @@ def main():
         default="../sg13g2_stdcell_typ_1p20V_25C.lib",
         help="Path to the *exact* .lib file to use for capacitance parsing."
     )
-    # --- END NEW ARGUMENTS ---
     corners_group.add_argument("--vstep", type=str, default="0.1", help="Voltage step for sweep mode.")
 
     # --- Arguments for spectre_run.py ---
@@ -104,7 +100,6 @@ def main():
     # --- Arguments for poly_fit.py ---
     fit_group = parser.add_argument_group('Fitting Options (for poly_fit.py)')
     fit_group.add_argument('--poly_degree', type=int, default=3, help='Polynomial degree for the residual model.')
-
 
     args = parser.parse_args()
 
@@ -140,14 +135,12 @@ def main():
         if args.vstep:
             cmd_corners.extend(["--vstep", args.vstep])
             
-        # --- NEW: Pass the new arguments down to create_corners.py ---
         if args.pin_names:
             cmd_corners.extend(["--pin-names", args.pin_names])
         if args.cell_map:
             cmd_corners.extend(["--cell-map", args.cell_map])
         if args.base_lib_file:
             cmd_corners.extend(["--base-lib-file", args.base_lib_file])
-        # --- END NEW ---
 
         run_command(cmd_corners, f"Create Corners for {scs_file.name}")
 

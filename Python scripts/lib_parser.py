@@ -29,7 +29,7 @@ def read_lib_file(lib_path_str: str) -> Optional[str]:
 
 # --- Path Generation ---
 # This function is simplified to just return the provided path.
-# The script will use the *exact* file given for all corners.
+# The script will use the same file for all corners.
 
 def get_lib_path(base_lib_path_str: str, proc_key: str) -> Optional[str]:
     """
@@ -55,10 +55,9 @@ def find_block(content: str, block_type: str, block_name: str, start_index: int 
     This uses a brace-balancing algorithm instead of regex to handle
     nested structures correctly.
     """
-    # --- THIS IS THE FIX ---
+
     # Added a space between block_type and the opening parenthesis
     search_str = f"{block_type} ({block_name})"
-    # ---------------------
     
     try:
         # Find the start of the block declaration, e.g., "pin (A)"

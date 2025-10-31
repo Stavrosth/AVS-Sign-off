@@ -1,13 +1,20 @@
-#!/usr/bin/env python3
+"""
+spectre_run.py
+This script recursively runs Spectre simulations on .scs files found in a directory structure.
+It organizes the results to mirror the input structure, extracting measurement values from .measure files
+and compiling them into CSV files for easy analysis down the road.
+
+-- IT IS NECESSARY TO HAVE A SPECTRE LICENSE TO RUN THIS SCRIPT --
+"""
+
 import argparse, csv, os, re, subprocess, sys
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 
+# Match floating point numbers, including scientific notation
 NUM = r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?"
 
-# ------------------------
 # .measure file parsing
-# ------------------------
 MEAS_NAME_LINE = re.compile(r"^\s*Measurement\s+Name\s*:\s*(\S+)", re.IGNORECASE)
 MEAS_BLOCK_NAME_NUM = re.compile(r"(?i)\b(?:transient|tran)\D*?(\d+)\b")
 
@@ -32,7 +39,6 @@ def parse_measure_file(meas_path: Path, meas_name: str) -> List[Dict]:
 
     This version is robust to Spectre outputs that include a "Swept Measurements"
     section (i.e., temp-tagged values without a preceding 'Measurement Name').
-    It also extracts the block index from names like 'transient3-meas_foreach'.
     """
     rows: List[Dict] = []
     if not meas_path.exists():
@@ -198,8 +204,9 @@ def find_measure_file(scs: Path) -> Optional[Path]:
     cand = scs.with_suffix(".measure")
     if cand.exists():
         return cand
-    # No fallback here; we'll still emit rows for all temps even if .measure missing
-    return None
+    else:
+        print(f"Warning: .measure file not found for {scs}", file=sys.stderr)
+        return None
 
 def discover_runs(current_dir: Path, glob: str, results_root: Path, top_level_dir: Path, out_csv_name: str) -> List[Dict]:
     """

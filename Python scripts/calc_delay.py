@@ -1,3 +1,13 @@
+"""
+calc_delay.py
+This script calculates and plots the delay of a cell based on a timing model
+defined by parameters read from a 'results.txt' file. The delay can be computed
+for different process corners, supply voltages, and temperatures.
+
+The results.txt file is the output of the poly_fit.py script, which fits the timing
+model parameters.
+"""
+
 import argparse
 import re
 import numpy as np
@@ -5,8 +15,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import sys
 import os
-
-# --- Constants and Mappings ---
 
 # Map process corner names to numerical values used in the equations.
 PROCESS_MAP = {
@@ -16,7 +24,6 @@ PROCESS_MAP = {
 }
 
 # --- Functions ---
-
 def parse_parameters(filepath):
     """
     Parses the 9 model parameters (D0, kDP, kDT, etc.) from the provided text file.
@@ -27,6 +34,7 @@ def parse_parameters(filepath):
     Returns:
         dict: A dictionary containing the parameter names and their float values.
     """
+    
     params = {}
     # This regular expression looks for lines with 'key = value' and captures them.
     param_regex = re.compile(r"(\w+)\s*=\s*([-\d.]+)")

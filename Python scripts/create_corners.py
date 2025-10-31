@@ -1,12 +1,22 @@
-#!/usr/bin/env python3
 """
 create_corners.py
-Generates three .scs netlists (TT/SS/FF) from a base Spectre netlist.
+Generates .scs netlists (TT/SS/FF) from a base Spectre netlist.
+
+Some comments are necessary for the correct functioning of the script.
+    - The chain must be inbetween the comments:
+        // Chain
+        ...
+        // Chain ends
+
+    - The input .scs file must end with the comment: 
+        // finish
+
+    - The instantiations of the cells must start with the string:
+        ncell
 
 Modes:
 1) Sweep mode (default, legacy behavior)
    - Per-process voltage range (from PROC_INFO) with step --vstep
-   - For each voltage, append .ALTER blocks for temps 0, 50, 125 °C
 
 2) Fixed-voltage mode
    - Use --fixed-v <voltage> to generate exactly THREE files (tt/ss/ff).
@@ -20,13 +30,13 @@ Modes:
    - For each pin `i` from 1 to N, it creates a directory (e.g., corners/corner_i)
      and generates netlists where the active signal is connected to the i-th pin
      for ALL cells in the chain, ignoring any line starting with 'vin'.
-   - **NEW:** Use --pin-names "A,B,..." to map pin indices (1, 2, ...) to
+   - Use --pin-names "A,B,..." to map pin indices (1, 2, ...) to
      logical pin names from the .lib file for capacitance parsing.
-   - **NEW:** Use --base-lib-file <path> to specify the .lib file to parse.
-   - **NEW:** Use --cell-map "SCS_CELL:LIB_CELL,..." to map .scs cell names
+   - Use --base-lib-file <path> to specify the .lib file to parse.
+   - Use --cell-map "SCS_CELL:LIB_CELL,..." to map .scs cell names
      to their corresponding .lib cell names.
 
-4) Load-splitting mode (new functionality)
+4) Load-splitting mode 
    - If the input netlist contains comment blocks:
      //Gate load start ... //Gate load ends
      //Wire load start ... //wire load ends
@@ -34,32 +44,25 @@ Modes:
      named 'gate_load' and 'wire_load'.
    - The 'gate_load' version will contain ONLY the gate load section.
    - The 'wire_load' version will contain ONLY the wire load section.
-   - **Capacitance replacement from .lib files only runs for 'wire_load'.**
+   - **Capacitance replacement from .lib files only runs for 'wire_load'.**    
 """
 
 import argparse
 import re
+import lib_parser # Local module for .lib parsing included in the lib_parser.py file
+
 from pathlib import Path
 from decimal import Decimal, ROUND_HALF_UP
 from typing import Optional, List, Tuple, Dict
 
-# --- Try to import the new parser ---
-try:
-    import lib_parser
-except ImportError:
-    print("--- FATAL ERROR: Could not import 'lib_parser.py'. ---")
-    print("--- Please make sure 'lib_parser.py' is in the same directory as this script. ---")
-    exit(1)
-
-
+#### ----- This needs to change based on the files that contain the corner cases ----- ###
 # ----- Foundry include tokens -----
 INCLUDE_TT  = "ihp013ng_include_all"
 INCLUDE_SS  = "ihp013ng_include_all_slow"
 INCLUDE_FF  = "ihp013ng_include_all_fast"
+INCLUDE_PATTERN = re.compile(r"(ihp013ng_include_all(?:_slow|_fast)?)", flags=re.IGNORECASE)
 
 # ----- Per-process meta -----
-# ----- NOTE: Hard-coded capacitance values have been REMOVED. ---
-# ----- This logic is now handled by the .lib parser. -----
 PROC_INFO = {
     "tt": {
         "include": INCLUDE_TT, "vmin": Decimal("0.96"), "vmax": Decimal("1.44"), "suffix": "tt",
@@ -73,7 +76,6 @@ PROC_INFO = {
 }
 
 # ----- Regex helpers -----
-INCLUDE_PATTERN = re.compile(r"(ihp013ng_include_all(?:_slow|_fast)?)", flags=re.IGNORECASE)
 VVDVAL_PATTERN = re.compile(r"(?i)(^|\s)(\.param\s+vvdval\s*=\s*)([0-9]*\.?[0-9]+)", flags=re.IGNORECASE | re.MULTILINE)
 TEMP_PATTERN   = re.compile(r"(?i)^\s*\.temp\s+([+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?)\s*$", flags=re.MULTILINE)
 
@@ -82,24 +84,24 @@ GATE_LOAD_PATTERN = re.compile(r"//\s*Gate\s+load\s+start.*//\s*Gate\s+load\s+en
 WIRE_LOAD_PATTERN = re.compile(r"//\s*Wire\s+load\s+start.*//\s*wire\s+load\s+ends", re.IGNORECASE | re.DOTALL)
 
 
-def modify_gate_load_netlist(text: str) -> str:
-    """
-    Specific modifications for the 'gate_load' netlist.
+"""
+Specific modifications for the 'gate_load' netlist.
     - Removes trailing '0' from primary input/output pins (e.g., out60 -> out6, in10 -> in1).
     - Updates .meas statements to match the new pin names (e.g., V(out60) -> V(out6)).
-    """
+"""
+def modify_gate_load_netlist(text: str) -> str:
     print("--- Applying special modifications for gate_load netlist. ---")
     modified_text = re.sub(r'\b((?:in|out)\d*)0\b', r'\1', text)
     return modified_text
 
 
+"""
+Analyzes netlist for gate/wire load comments and returns versions of the text.
+Returns: [ (load_subdir, processed_text), ... ]
+e.g., [ ('gate_load', text_A), ('wire_load', text_B) ]
+or    [ ('', original_text) ]
+"""
 def process_load_sections(netlist_text: str) -> List[Tuple[str, str]]:
-    """
-    Analyzes netlist for gate/wire load comments and returns versions of the text.
-    Returns: [ (load_subdir, processed_text), ... ]
-    e.g., [ ('gate_load', text_A), ('wire_load', text_B) ]
-    or    [ ('', original_text) ]
-    """
     has_gate_load = GATE_LOAD_PATTERN.search(netlist_text)
     has_wire_load = WIRE_LOAD_PATTERN.search(netlist_text)
 
@@ -122,8 +124,8 @@ def process_load_sections(netlist_text: str) -> List[Tuple[str, str]]:
         return [("", netlist_text)]
 
 
+"""Return only the base (pre-.ALTER) portion of the deck."""
 def extract_pre_alter(text: str) -> str:
-    """Return only the base (pre-.ALTER) portion of the deck."""
     parts = re.split(r'^\s*//finish', text, flags=re.MULTILINE)
     return parts[0]
 
@@ -198,8 +200,6 @@ def swap_pins_for_chain(netlist_text: str, num_pins: int, signal_name: str, targ
                     continue
 
     if original_active_pin_idx == -1:
-        # Do not raise error, but warn. This allows script to run on netlists
-        # without the expected chain structure.
         print(f"--- WARNING: Could not find signal '{signal_name}' in a valid cell line. Pin swapping skipped.")
         return netlist_text, None
         
@@ -317,7 +317,7 @@ def generate_corners(
     pin_num: int = 0,
     scs_master_cell_name: Optional[str] = None, # Renamed for clarity
     logical_pin_name: Optional[str] = None,
-    cell_map: Optional[Dict[str, str]] = None # NEW argument
+    cell_map: Optional[Dict[str, str]] = None
 ):
     """
     Core logic to generate corner files (TT/SS/FF) from a given base netlist text.
@@ -327,7 +327,7 @@ def generate_corners(
 
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    # --- NEW: Look up the .lib cell name from the .scs cell name ---
+    # --- Look up the .lib cell name from the .scs cell name ---
     lib_cell_name: Optional[str] = None
     if scs_master_cell_name and cell_map:
         lib_cell_name = cell_map.get(scs_master_cell_name)
@@ -337,7 +337,6 @@ def generate_corners(
             print(f"--- Mapped .scs cell '{scs_master_cell_name}' to .lib cell '{lib_cell_name}' ---")
     elif scs_master_cell_name and not cell_map:
          print(f"--- WARNING: Found .scs cell '{scs_master_cell_name}' but --cell-map is not provided. Skipping cap replacement.")
-    # --- End new block ---
 
     if fixed_v is not None:
         # Fixed-voltage mode
@@ -347,12 +346,12 @@ def generate_corners(
             "* Note: No .ALTER blocks were added by default.\n\n"
         )
         for proc_key, info in PROC_INFO.items():
-            # --- NEW: Call capacitance substitution ---
+            # --- Call capacitance substitution ---
             corner_text = substitute_capacitance(
                 base_text,
                 proc_key,
                 load_subdir,
-                lib_cell_name, # Pass the mapped .lib cell name
+                lib_cell_name,
                 logical_pin_name,
                 args.base_lib_file 
             )
@@ -362,8 +361,7 @@ def generate_corners(
             body = prepare_body_for_process(corner_text, include_name, fixed_v)
             header = header_template.format(proc_upper=proc_key.upper(), fixed_v=f"{fixed_v:.3f}")
             final_text = body.rstrip() + "\n\n" + header
-            if args.with_alters:
-                final_text += build_temp_alters_for_voltage(fixed_v, temps)
+
             out_path = output_dir / f"{base_name}_{suffix}.scs"
             out_path.write_text(final_text)
             print(f"Wrote: {out_path}")
@@ -381,7 +379,7 @@ def generate_corners(
             base_text,
             proc_key,
             load_subdir,
-            lib_cell_name, # Pass the mapped .lib cell name
+            lib_cell_name,
             logical_pin_name,
             args.base_lib_file
         )
@@ -432,7 +430,8 @@ def main():
         default="../sg13g2_stdcell_typ_1p20V_25C.lib",
         help="Path to the *exact* .lib file to use for capacitance parsing. This single file will be used for all corners (tt, ss, ff)." 
     )
-    # --- NEW ARGUMENT ---
+
+    #-- Cell mapping argument ---
     pin_group.add_argument(
         "--cell-map",
         type=str,
@@ -443,7 +442,6 @@ def main():
     # --- General options ---
     option_group = parser.add_argument_group('General Options')
     option_group.add_argument("--temps", type=str, default="0,50,125", help="Comma-separated temperatures (default: 0,50,125)")
-    option_group.add_argument("--with-alters", action="store_true", help="Append .ALTER blocks for temps in fixed-v mode.")
     
     args = parser.parse_args()
 
@@ -465,7 +463,7 @@ def main():
         if args.pins and len(pin_names_list) != args.pins:
             raise ValueError(f"Mismatch: --pins was set to {args.pins}, but --pin-names provided {len(pin_names_list)} names. They must match.")
 
-    # --- NEW: Parse cell map ---
+    # --- Parse cell map ---
     cell_map_dict: Optional[Dict[str, str]] = None
     if args.cell_map:
         try:
@@ -477,7 +475,6 @@ def main():
             raise ValueError("Invalid format for --cell-map. Use: \"SCS_NAME_1:LIB_NAME_1,SCS_NAME_2:LIB_NAME_2\"")
     elif args.pins:
          print("--- WARNING: Running in multi-pin mode but --cell-map was not provided. Capacitance replacement will be skipped. ---")
-    # --- End new block ---
 
     # --- Main logic ---
     load_versions = process_load_sections(base_text)
@@ -516,12 +513,12 @@ def main():
                     args,
                     load_subdir,
                     pin_num,
-                    scs_master_cell_name, # Pass the .scs cell name
+                    scs_master_cell_name, 
                     logical_pin_name,
-                    cell_map_dict # Pass the map
+                    cell_map_dict 
                 )
     else:
-        # Original single-file mode
+        # Single-pin mode
         for load_subdir, processed_text in load_versions:
             final_output_dir = args.output_dir / load_subdir
             load_type_str = f" ({load_subdir})" if load_subdir else ""

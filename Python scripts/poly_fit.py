@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 """
 poly_fit.py
 
@@ -12,6 +10,13 @@ CSV's local directory.
 
 Finally, it aggregates the key voltage shift and anchor delay metrics from
 all runs into a single 'overall_results.txt' file at the top level.
+
+The fitting process involves:
+1. Fitting a base delay model using non-linear least squares.
+2. Fitting a polynomial ridge regression model to the residuals.
+
+Usage:
+    python poly_fit.py <path> [--poly_degree POLY_DEGREE]
 """
 
 from __future__ import division, print_function
@@ -40,7 +45,7 @@ PRED_SCATTER_PLOT_NAME = 'measured_vs_predicted.png'
 RESULTS_TXT_NAME = 'results.txt'
 OVERALL_RESULTS_TXT_NAME = 'overall_results.txt'
 PROCESS_MAP = {"tt": 0.0, "ff": -1.0, "ss": 1.0}
-VMIN_GLOBAL = 0.4
+VMIN_GLOBAL = 0.4 # Minimum voltage for searching matches
 
 # ----------------- Base Delay Model Definition -----------------
 class BaseModelParameters:
@@ -49,20 +54,7 @@ class BaseModelParameters:
         self.D0, self.kDP, self.kDT = D0, kDP, kDT
         self.Vt, self.kVtP, self.kVtT = Vt, kVtP, kVtT
         self.alpha, self.kAlphaP, self.kAlphaT = alpha, kAlphaP, kAlphaT
-        """
-Fit a PVT-aware delay model to all 'measurements.csv' files found in a
-directory.
-
-positional arguments:
-  path                  Directory to search recursively for 'measurements.csv'
-                        files.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --poly_degree POLY_DEGREE
-                        Polynomial degree for the residual model.
-"""
-    def as_array(self): return np.array([getattr(self, attr) for attr in self.__slots__], dtype=float)
+        def as_array(self): return np.array([getattr(self, attr) for attr in self.__slots__], dtype=float)
     @classmethod
     def from_array(cls, arr): return cls(*arr)
     def __str__(self):
@@ -70,6 +62,7 @@ optional arguments:
                 f'Vt    = {self.Vt:8.6g}, kVtP= {self.kVtP:8.6g}, kVtT= {self.kVtT:8.6g}\n'
                 f'alpha = {self.alpha:8.6g}, kAlphaP={self.kAlphaP:8.6g}, kAlphaT={self.kAlphaT:8.6g}')
 
+# ----------------- Base Delay Prediction Function -----------------
 def base_delay(params, P, V, T):
     D_eff = params.D0 * (1.0 + params.kDP * P + params.kDT * T)
     Vt_eff = params.Vt + params.kVtP * P + params.kVtT * T
@@ -124,30 +117,38 @@ class FullModel:
 
 def compute_voltage_matches_and_shift(df, model):
     anchor_df = df[(df['section'] == 'ss') & (df['temp'] == 0)]
+
     if anchor_df.empty:
         print("Warning: Anchor data ('ss' corner at temp=0) not found. Cannot calculate shift.")
         return None, None, None, np.nan
+    
     v_anchor = anchor_df['dc'].mean()
     delay_target = model.predict(np.array([PROCESS_MAP['ss']]), np.array([v_anchor]), np.array([0.0]))[0]
     print(f"Anchor point: 'ss', 0C at avg V={v_anchor:.4f}V has target delay={delay_target:.4f} ps")
     match_rows, voltage_shift = [], np.nan
+    
     for sec, temp in sorted(set(zip(df['section'], df['temp']))):
         p_val = PROCESS_MAP.get(sec, 0.0)
         def objective_func(v): return model.predict(np.array([p_val]), np.array([v]), np.array([float(temp)]))[0] - delay_target
         corner_df = df[(df['section'] == sec) & (df['temp'] == temp)]
+        
         if corner_df.empty: continue
         search_min = max(VMIN_GLOBAL, corner_df['dc'].min() - 0.1)
         search_max = corner_df['dc'].max() + 0.1
+        
         try:
             # Check if a root exists in the interval
             if np.sign(objective_func(search_min)) == np.sign(objective_func(search_max)):
                 raise ValueError("Objective function has the same sign at both ends of the interval.")
+            
             matched_voltage = brentq(objective_func, a=search_min, b=search_max)
             match_rows.append({'section': sec, 'temp': temp, 'target_delay_ps': delay_target, 'matched_voltage_v': matched_voltage})
+
             if sec == 'ff' and temp == 0: voltage_shift = v_anchor - matched_voltage
         except (ValueError, RuntimeError) as e:
             print(f"Warning: Could not find matching voltage for {sec} @ {temp}C. Reason: {e}")
             match_rows.append({'section': sec, 'temp': temp, 'target_delay_ps': delay_target, 'matched_voltage_v': np.nan})
+
     return pd.DataFrame(match_rows), v_anchor, delay_target, voltage_shift
 
 # ----------------------- Plotting & Main Execution -----------------------
@@ -157,20 +158,22 @@ def plot_overlay_fit(df, model, output_path, anchor_v=None, anchor_delay=None):
     temp_color_map = {t: c for t, c in zip(sorted(df['temp'].unique()), colors)}
 
     for sec in sorted(df['section'].unique()):
+
         sec_df = df[df['section'] == sec]
         if sec_df.empty: continue
         vmin, vmax = sec_df['dc'].min(), sec_df['dc'].max()
         v_grid = np.linspace(vmin, vmax, 200)
+
         for t in sorted(sec_df['temp'].unique()):
             p_arr, t_arr = np.full_like(v_grid, PROCESS_MAP.get(sec, 0.0)), np.full_like(v_grid, float(t))
             pred = model.predict(p_arr, v_grid, t_arr)
             ax.plot(v_grid, pred, lw=1.2, alpha=0.9, color=temp_color_map.get(t), label=f'{sec.upper()} @ {t}°C Model')
-            ax.scatter(sec_df[sec_df['temp'] == t]['dc'], sec_df[sec_df['temp'] == t]['delay_ps'],
-                       s=20, alpha=0.75, color=temp_color_map.get(t),
-                       label=f'{sec.upper()} @ {t}°C Measured', edgecolors='none')
+            ax.scatter(sec_df[sec_df['temp'] == t]['dc'], sec_df[sec_df['temp'] == t]['delay_ps'], s=20, alpha=0.75, color=temp_color_map.get(t), label=f'{sec.upper()} @ {t}°C Measured', edgecolors='none')
+
     if anchor_v is not None and anchor_delay is not None:
         ax.axhline(y=anchor_delay, color='red', ls='--', lw=1.5, label=f'Anchor Delay ({anchor_delay:.2f} ps)')
         ax.plot(anchor_v, anchor_delay, 'r*', ms=12, zorder=10, label=f'Anchor Point ({anchor_v:.2f}V)')
+
     ax.set_xlabel('Voltage (V)'); ax.set_ylabel('Delay (ps)'); ax.set_title(f'Model Fit vs. Measured Data\n(Source: {output_path.parent.name})')
     ax.grid(True, which='both', ls='--', lw=0.5); ax.legend(fontsize=8, ncol=2)
     fig.tight_layout(); fig.savefig(output_path, dpi=160); plt.close(fig)
@@ -179,8 +182,10 @@ def plot_measured_vs_predicted(y_train_true, y_train_pred, y_test_true, y_test_p
     fig, ax = plt.subplots(figsize=(7, 7))
     ax.scatter(y_train_true, y_train_pred, s=15, alpha=0.6, edgecolors='none', c='blue', label='Train Data')
     ax.scatter(y_test_true, y_test_pred, s=25, alpha=0.8, edgecolors='none', c='orange', label='Test Data')
+
     all_y = np.concatenate([y_train_true, y_train_pred, y_test_true, y_test_pred])
     lims = [np.min(all_y), np.max(all_y)]
+
     ax.plot(lims, lims, 'r--', lw=1.0, label='y=x (Ideal)')
     ax.set_xlabel('Measured Delay (ps)'); ax.set_ylabel('Predicted Delay (ps)')
     ax.set_title(f'Measured vs. Predicted Delay\n(Source: {output_path.parent.name})'); ax.grid(True, ls='--', lw=0.5)
