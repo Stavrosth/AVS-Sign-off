@@ -1,0 +1,18 @@
+--- Overall Voltage Shift and Anchor Delay Summary ---
+
+Source: corner_pin1/gate_load/measurements.csv
+  - Anchor Delay:  252.119023 ps
+  - Voltage Shift: 0.300847 V
+
+Source: corner_pin1/wire_load/measurements.csv
+  - Anchor Delay:  93.226995 ps
+  - Voltage Shift: 0.307462 V
+
+Source: corner_pin2/gate_load/measurements.csv
+  - Anchor Delay:  256.543741 ps
+  - Voltage Shift: 0.297837 V
+
+Source: corner_pin2/wire_load/measurements.csv
+  - Anchor Delay:  106.005014 ps
+  - Voltage Shift: 0.304384 V
+

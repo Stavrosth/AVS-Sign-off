@@ -1,0 +1,536 @@
+Exported variables from results directory:  ././nand_ss.raw/
+
+date               :  1:23:34 AM, Fri Nov 7, 2025
+design             :  // Stavros Stathoudakis
+simulator          :  spectre
+version            :  23.1.0.242.isr1
+
+
+Measurement Name   :  transient1
+Analysis Type      :  tran
+delay_out6            =  3.93398e-10 
+delay_out8            =  4.93072e-10 
+delay_out8_out6       =  9.96736e-11 
+
+
+Measurement Name   :  transient2
+Analysis Type      :  tran
+delay_out6            =  4.02144e-10 
+delay_out8            =  5.05314e-10 
+delay_out8_out6       =  1.0317e-10 
+
+
+Measurement Name   :  transient3
+Analysis Type      :  tran
+delay_out6            =  4.06814e-10 
+delay_out8            =  5.12347e-10 
+delay_out8_out6       =  1.05532e-10 
+
+
+Measurement Name   :  transient4
+Analysis Type      :  tran
+delay_out6            =  3.88239e-10 
+delay_out8            =  4.86149e-10 
+delay_out8_out6       =  9.79105e-11 
+
+
+Measurement Name   :  transient5
+Analysis Type      :  tran
+delay_out6            =  3.97088e-10 
+delay_out8            =  4.98505e-10 
+delay_out8_out6       =  1.01417e-10 
+
+
+Measurement Name   :  transient6
+Analysis Type      :  tran
+delay_out6            =  4.02041e-10 
+delay_out8            =  5.05976e-10 
+delay_out8_out6       =  1.03935e-10 
+
+
+Measurement Name   :  transient7
+Analysis Type      :  tran
+delay_out6            =  3.8326e-10 
+delay_out8            =  4.79486e-10 
+delay_out8_out6       =  9.62254e-11 
+
+
+Measurement Name   :  transient8
+Analysis Type      :  tran
+delay_out6            =  3.9216e-10 
+delay_out8            =  4.91966e-10 
+delay_out8_out6       =  9.98057e-11 
+
+
+Measurement Name   :  transient9
+Analysis Type      :  tran
+delay_out6            =  3.97458e-10 
+delay_out8            =  4.99817e-10 
+delay_out8_out6       =  1.0236e-10 
+
+
+Measurement Name   :  transient10
+Analysis Type      :  tran
+delay_out6            =  3.78433e-10 
+delay_out8            =  4.73009e-10 
+delay_out8_out6       =  9.4576e-11 
+
+
+Measurement Name   :  transient11
+Analysis Type      :  tran
+delay_out6            =  3.87451e-10 
+delay_out8            =  4.85632e-10 
+delay_out8_out6       =  9.81817e-11 
+
+
+Measurement Name   :  transient12
+Analysis Type      :  tran
+delay_out6            =  3.93001e-10 
+delay_out8            =  4.93913e-10 
+delay_out8_out6       =  1.00912e-10 
+
+
+Measurement Name   :  transient13
+Analysis Type      :  tran
+delay_out6            =  3.7379e-10 
+delay_out8            =  4.66821e-10 
+delay_out8_out6       =  9.30311e-11 
+
+
+Measurement Name   :  transient14
+Analysis Type      :  tran
+delay_out6            =  3.82835e-10 
+delay_out8            =  4.79504e-10 
+delay_out8_out6       =  9.66687e-11 
+
+
+Measurement Name   :  transient15
+Analysis Type      :  tran
+delay_out6            =  3.88724e-10 
+delay_out8            =  4.8814e-10 
+delay_out8_out6       =  9.94156e-11 
+
+
+Measurement Name   :  transient16
+Analysis Type      :  tran
+delay_out6            =  3.69334e-10 
+delay_out8            =  4.60894e-10 
+delay_out8_out6       =  9.156e-11 
+
+
+Measurement Name   :  transient17
+Analysis Type      :  tran
+delay_out6            =  3.78324e-10 
+delay_out8            =  4.73512e-10 
+delay_out8_out6       =  9.51879e-11 
+
+
+Measurement Name   :  transient18
+Analysis Type      :  tran
+delay_out6            =  3.84557e-10 
+delay_out8            =  4.82583e-10 
+delay_out8_out6       =  9.80261e-11 
+
+
+Measurement Name   :  transient19
+Analysis Type      :  tran
+delay_out6            =  3.6503e-10 
+delay_out8            =  4.55159e-10 
+delay_out8_out6       =  9.01298e-11 
+
+
+Measurement Name   :  transient20
+Analysis Type      :  tran
+delay_out6            =  3.7406e-10 
+delay_out8            =  4.67791e-10 
+delay_out8_out6       =  9.37305e-11 
+
+
+Measurement Name   :  transient21
+Analysis Type      :  tran
+delay_out6            =  3.8055e-10 
+delay_out8            =  4.77238e-10 
+delay_out8_out6       =  9.66885e-11 
+
+
+Measurement Name   :  transient22
+Analysis Type      :  tran
+delay_out6            =  3.60845e-10 
+delay_out8            =  4.49585e-10 
+delay_out8_out6       =  8.87402e-11 
+
+
+Measurement Name   :  transient23
+Analysis Type      :  tran
+delay_out6            =  3.69932e-10 
+delay_out8            =  4.62287e-10 
+delay_out8_out6       =  9.23545e-11 
+
+
+Measurement Name   :  transient24
+Analysis Type      :  tran
+delay_out6            =  3.76565e-10 
+delay_out8            =  4.71957e-10 
+delay_out8_out6       =  9.53914e-11 
+
+
+Measurement Name   :  transient25
+Analysis Type      :  tran
+delay_out6            =  3.56809e-10 
+delay_out8            =  4.44194e-10 
+delay_out8_out6       =  8.73854e-11 
+
+
+Measurement Name   :  transient26
+Analysis Type      :  tran
+delay_out6            =  3.65972e-10 
+delay_out8            =  4.5699e-10 
+delay_out8_out6       =  9.10183e-11 
+
+
+Measurement Name   :  transient27
+Analysis Type      :  tran
+delay_out6            =  3.72748e-10 
+delay_out8            =  4.66878e-10 
+delay_out8_out6       =  9.41307e-11 
+
+
+Measurement Name   :  transient28
+Analysis Type      :  tran
+delay_out6            =  3.52943e-10 
+delay_out8            =  4.3904e-10 
+delay_out8_out6       =  8.60973e-11 
+
+
+Measurement Name   :  transient29
+Analysis Type      :  tran
+delay_out6            =  3.62035e-10 
+delay_out8            =  4.5177e-10 
+delay_out8_out6       =  8.97353e-11 
+
+
+Measurement Name   :  transient30
+Analysis Type      :  tran
+delay_out6            =  3.69096e-10 
+delay_out8            =  4.6202e-10 
+delay_out8_out6       =  9.29249e-11 
+
+
+Measurement Name   :  transient31
+Analysis Type      :  tran
+delay_out6            =  3.4918e-10 
+delay_out8            =  4.34039e-10 
+delay_out8_out6       =  8.4859e-11 
+
+
+Measurement Name   :  transient32
+Analysis Type      :  tran
+delay_out6            =  3.5829e-10 
+delay_out8            =  4.46803e-10 
+delay_out8_out6       =  8.85127e-11 
+
+
+Measurement Name   :  transient33
+Analysis Type      :  tran
+delay_out6            =  3.65531e-10 
+delay_out8            =  4.57265e-10 
+delay_out8_out6       =  9.17348e-11 
+
+
+Measurement Name   :  transient34
+Analysis Type      :  tran
+delay_out6            =  3.4552e-10 
+delay_out8            =  4.29191e-10 
+delay_out8_out6       =  8.36714e-11 
+
+
+Measurement Name   :  transient35
+Analysis Type      :  tran
+delay_out6            =  3.54629e-10 
+delay_out8            =  4.4194e-10 
+delay_out8_out6       =  8.73111e-11 
+
+
+Measurement Name   :  transient36
+Analysis Type      :  tran
+delay_out6            =  3.62027e-10 
+delay_out8            =  4.526e-10 
+delay_out8_out6       =  9.05727e-11 
+
+
+Measurement Name   :  transient37
+Analysis Type      :  tran
+delay_out6            =  3.41986e-10 
+delay_out8            =  4.24487e-10 
+delay_out8_out6       =  8.25012e-11 
+
+
+Measurement Name   :  transient38
+Analysis Type      :  tran
+delay_out6            =  3.5111e-10 
+delay_out8            =  4.37247e-10 
+delay_out8_out6       =  8.61371e-11 
+
+
+Measurement Name   :  transient39
+Analysis Type      :  tran
+delay_out6            =  3.58658e-10 
+delay_out8            =  4.48106e-10 
+delay_out8_out6       =  8.94476e-11 
+
+
+Measurement Name   :  transient40
+Analysis Type      :  tran
+delay_out6            =  3.38541e-10 
+delay_out8            =  4.19921e-10 
+delay_out8_out6       =  8.13798e-11 
+
+
+Measurement Name   :  transient41
+Analysis Type      :  tran
+delay_out6            =  3.47702e-10 
+delay_out8            =  4.32731e-10 
+delay_out8_out6       =  8.50294e-11 
+
+
+Measurement Name   :  transient42
+Analysis Type      :  tran
+delay_out6            =  3.55369e-10 
+delay_out8            =  4.43747e-10 
+delay_out8_out6       =  8.83785e-11 
+
+
+Measurement Name   :  transient43
+Analysis Type      :  tran
+delay_out6            =  3.35202e-10 
+delay_out8            =  4.15497e-10 
+delay_out8_out6       =  8.02952e-11 
+
+
+Measurement Name   :  transient44
+Analysis Type      :  tran
+delay_out6            =  3.44374e-10 
+delay_out8            =  4.28334e-10 
+delay_out8_out6       =  8.396e-11 
+
+
+Measurement Name   :  transient45
+Analysis Type      :  tran
+delay_out6            =  3.52199e-10 
+delay_out8            =  4.39553e-10 
+delay_out8_out6       =  8.73535e-11 
+
+
+Measurement Name   :  transient46
+Analysis Type      :  tran
+delay_out6            =  3.31941e-10 
+delay_out8            =  4.11218e-10 
+delay_out8_out6       =  7.92772e-11 
+
+
+Measurement Name   :  transient47
+Analysis Type      :  tran
+delay_out6            =  3.41159e-10 
+delay_out8            =  4.24076e-10 
+delay_out8_out6       =  8.29172e-11 
+
+
+Measurement Name   :  transient48
+Analysis Type      :  tran
+delay_out6            =  3.49103e-10 
+delay_out8            =  4.35422e-10 
+delay_out8_out6       =  8.63182e-11 
+
+
+Measurement Name   :  transient49
+Analysis Type      :  tran
+delay_out6            =  3.28818e-10 
+delay_out8            =  4.07062e-10 
+delay_out8_out6       =  7.82441e-11 
+
+
+Measurement Name   :  transient50
+Analysis Type      :  tran
+delay_out6            =  3.38023e-10 
+delay_out8            =  4.19879e-10 
+delay_out8_out6       =  8.18563e-11 
+
+
+Measurement Name   :  transient51
+Analysis Type      :  tran
+delay_out6            =  3.46116e-10 
+delay_out8            =  4.31439e-10 
+delay_out8_out6       =  8.53229e-11 
+
+
+Measurement Name   :  transient52
+Analysis Type      :  tran
+delay_out6            =  3.25791e-10 
+delay_out8            =  4.03043e-10 
+delay_out8_out6       =  7.72528e-11 
+
+
+Measurement Name   :  transient53
+Analysis Type      :  tran
+delay_out6            =  3.34953e-10 
+delay_out8            =  4.15819e-10 
+delay_out8_out6       =  8.08655e-11 
+
+
+Measurement Name   :  transient54
+Analysis Type      :  tran
+delay_out6            =  3.43172e-10 
+delay_out8            =  4.27552e-10 
+delay_out8_out6       =  8.43796e-11 
+
+
+Measurement Name   :  transient55
+Analysis Type      :  tran
+delay_out6            =  3.2281e-10 
+delay_out8            =  3.99117e-10 
+delay_out8_out6       =  7.63076e-11 
+
+
+Measurement Name   :  transient56
+Analysis Type      :  tran
+delay_out6            =  3.31979e-10 
+delay_out8            =  4.11907e-10 
+delay_out8_out6       =  7.99282e-11 
+
+
+Measurement Name   :  transient57
+Analysis Type      :  tran
+delay_out6            =  3.40305e-10 
+delay_out8            =  4.23749e-10 
+delay_out8_out6       =  8.34445e-11 
+
+
+Measurement Name   :  transient58
+Analysis Type      :  tran
+delay_out6            =  3.19902e-10 
+delay_out8            =  3.95324e-10 
+delay_out8_out6       =  7.54215e-11 
+
+
+Measurement Name   :  transient59
+Analysis Type      :  tran
+delay_out6            =  3.29115e-10 
+delay_out8            =  4.08099e-10 
+delay_out8_out6       =  7.89836e-11 
+
+
+Measurement Name   :  transient60
+Analysis Type      :  tran
+delay_out6            =  3.37533e-10 
+delay_out8            =  4.20076e-10 
+delay_out8_out6       =  8.2543e-11 
+
+
+Measurement Name   :  transient61
+Analysis Type      :  tran
+delay_out6            =  3.17119e-10 
+delay_out8            =  3.91636e-10 
+delay_out8_out6       =  7.45163e-11 
+
+
+Measurement Name   :  transient62
+Analysis Type      :  tran
+delay_out6            =  3.26284e-10 
+delay_out8            =  4.0439e-10 
+delay_out8_out6       =  7.8106e-11 
+
+
+Measurement Name   :  transient63
+Analysis Type      :  tran
+delay_out6            =  3.34819e-10 
+delay_out8            =  4.16487e-10 
+delay_out8_out6       =  8.1668e-11 
+
+
+Measurement Name   :  transient64
+Analysis Type      :  tran
+delay_out6            =  3.14403e-10 
+delay_out8            =  3.88024e-10 
+delay_out8_out6       =  7.36214e-11 
+
+
+Measurement Name   :  transient65
+Analysis Type      :  tran
+delay_out6            =  3.23568e-10 
+delay_out8            =  4.00795e-10 
+delay_out8_out6       =  7.72266e-11 
+
+
+Measurement Name   :  transient66
+Analysis Type      :  tran
+delay_out6            =  3.32204e-10 
+delay_out8            =  4.13014e-10 
+delay_out8_out6       =  8.08099e-11 
+
+
+Measurement Name   :  transient67
+Analysis Type      :  tran
+delay_out6            =  3.11733e-10 
+delay_out8            =  3.84545e-10 
+delay_out8_out6       =  7.28117e-11 
+
+
+Measurement Name   :  transient68
+Analysis Type      :  tran
+delay_out6            =  3.20905e-10 
+delay_out8            =  3.97274e-10 
+delay_out8_out6       =  7.63683e-11 
+
+
+Measurement Name   :  transient69
+Analysis Type      :  tran
+delay_out6            =  3.29606e-10 
+delay_out8            =  4.09585e-10 
+delay_out8_out6       =  7.99788e-11 
+
+
+Measurement Name   :  transient70
+Analysis Type      :  tran
+delay_out6            =  3.09158e-10 
+delay_out8            =  3.8114e-10 
+delay_out8_out6       =  7.19829e-11 
+
+
+Measurement Name   :  transient71
+Analysis Type      :  tran
+delay_out6            =  3.18324e-10 
+delay_out8            =  3.93879e-10 
+delay_out8_out6       =  7.55554e-11 
+
+
+Measurement Name   :  transient72
+Analysis Type      :  tran
+delay_out6            =  3.27101e-10 
+delay_out8            =  4.06257e-10 
+delay_out8_out6       =  7.91556e-11 
+
+
+Measurement Name   :  transient73
+Analysis Type      :  tran
+delay_out6            =  3.06629e-10 
+delay_out8            =  3.77812e-10 
+delay_out8_out6       =  7.11829e-11 
+
+
+Measurement Name   :  transient74
+Analysis Type      :  tran
+delay_out6            =  3.15784e-10 
+delay_out8            =  3.90535e-10 
+delay_out8_out6       =  7.47509e-11 
+
+
+Measurement Name   :  transient75
+Analysis Type      :  tran
+delay_out6            =  3.24659e-10 
+delay_out8            =  4.03027e-10 
+delay_out8_out6       =  7.83685e-11 
+
+
+
+
+
