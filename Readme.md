@@ -28,6 +28,7 @@ Runs the entire simulation and analysis workflow. Provides a single entry point 
             --cell-map CELL_MAP :  Mapping from .scs cell names to .lib cell names. Format: "SCS_NAME_1:LIB_NAME_1,SCS_NAME_2:LIB_NAME_2"
             --base-lib-file BASE_LIB_FILE : Path to the .lib file to use for capacitance parsing.
             --vstep VSTEP :        Voltage step for sweep mode.
+            --cell_name : Name of the cell that is being tested in order to be plotted
 
         Fitting Options (for poly_fit.py):
             --poly_degree POLY_DEGREE : Polynomial degree for the residual model.
@@ -89,6 +90,7 @@ The fitting process involves:
 
         optional arguments:
             --poly_degree POLY_DEGREE : Polynomial degree for the residual model.
+            --cell_name : Name of the cell that is being tested in order to be plotted
 
 
 ### calc_delay.py
